@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Kiralama Koşulları - ARAS OTO FİLO</title>
+
+    <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+
+    <link rel="stylesheet" href="../../cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link href="../../cdn.jsdelivr.net/npm/remixicon%404.2.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <script>
+        window.SiteConfig = {
+            phone: "+905300405138",
+            phone_display: "0530 040 51 38",
+            whatsapp_phone: "905300405138",
+            whatsapp_text: "Merhaba Kiralık Araçlar Hakkında Bilgi Almak İstiyorum",
+            site_name: "ARAS OTO FİLO",
+            site_email: "info@arasotofilo.com"
+        };
+
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#d6001c",
+                        primaryDark: "#a30015",
+                        secondary: "#0f172a"
+                    },
+                    fontFamily: {
+                        sans: ["Outfit", "sans-serif"]
+                    }
+                }
+            }
+        };
+    </script>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Outfit", sans-serif;
+            background: #ffffff;
+            color: #334155;
+        }
+
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.96);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(226, 232, 240, 0.9);
+            box-shadow: 0 8px 32px rgba(15, 23, 42, 0.05);
+        }
+
+        .glass-card {
+            background: #ffffff;
+            border: 1px solid #e5e7eb;
+            box-shadow: 0 10px 30px rgba(15, 23, 42, 0.05);
+            transition: all 0.25s ease;
+        }
+
+        .glass-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 16px 40px rgba(15, 23, 42, 0.08);
+            border-color: #d1d5db;
+        }
+
+        .hero-page {
+            background:
+                linear-gradient(120deg, rgba(15, 23, 42, 0.9), rgba(214, 0, 28, 0.38)),
+                url("https://images.unsplash.com/photo-1450101499163-c8848c66ca85?q=80&w=2070&auto=format&fit=crop");
+            background-position: center;
+            background-size: cover;
+            min-height: 320px;
+        }
+
+        .condition-section {
+            padding-bottom: 26px;
+            border-bottom: 1px solid #e5e7eb;
+        }
+
+        .condition-section:last-child {
+            border-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        .sticky-btn {
+            position: fixed;
+            bottom: 25px;
+            z-index: 50;
+            padding: 12px 24px;
+            border-radius: 50px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-weight: 700;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+            transition: transform 0.3s ease;
+        }
+
+        .sticky-btn:hover {
+            transform: translateY(-3px);
+        }
+
+        @media (max-width: 768px) {
+            .sticky-btn {
+                padding: 12px 14px;
+            }
+        }
+    </style>
+</head>
+
+<body class="flex flex-col min-h-screen">
+
+    <!-- Navbar -->
+    <header class="sticky top-0 z-50 glass-panel w-full">
+        <div class="bg-primary text-white py-1.5 text-center text-xs font-semibold tracking-wide">
+            Türkiye'nin En Modern Araç Kiralama Deneyimi
+        </div>
+
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-4">
+
+                <a href="index.html" class="flex items-center gap-3 group">
+                    <span class="text-2xl font-black text-secondary tracking-tighter group-hover:text-primary transition-colors whitespace-nowrap">
+                        ARAS <span class="text-primary">OTO FİLO</span>
+                    </span>
+
+                    <img src="resim/images.png"
+                         alt="Avis Logo"
+                         class="h-10 w-auto object-contain">
+                </a>
+
+                <nav class="hidden md:flex space-x-8 items-center">
+                    <a href="index.html" class="text-secondary font-semibold text-sm uppercase tracking-wide hover:text-primary transition-all">Anasayfa</a>
+                    <a href="araclar.html" class="text-secondary font-semibold text-sm uppercase tracking-wide hover:text-primary transition-all">Araçlarımız</a>
+                    <a href="hakkimizda.html" class="text-secondary font-semibold text-sm uppercase tracking-wide hover:text-primary transition-all">Hakkımızda</a>
+                    <a href="iletisim.html" class="text-secondary font-semibold text-sm uppercase tracking-wide hover:text-primary transition-all">İletişim</a>
+
+                    <a href="tel:+905300405138"
+                       class="dynamic-phone-link bg-gradient-to-r from-primary to-primaryDark text-white py-2.5 px-6 rounded-full font-semibold shadow-lg transition-all flex items-center gap-2 hover:-translate-y-0.5">
+                        <i class="ri-phone-fill"></i>
+                        Hemen Ara
+                    </a>
+                </nav>
+
+                <button id="mobile-menu-button" class="md:hidden text-secondary p-2 rounded-lg hover:bg-gray-100 transition-colors" aria-label="Menüyü Aç">
+                    <i class="ri-menu-4-line text-2xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <nav id="mobile-menu" class="md:hidden hidden bg-white border-t border-gray-200 absolute w-full shadow-xl">
+            <div class="flex flex-col p-4 space-y-2">
+                <a href="index.html" class="p-3 rounded-xl hover:bg-gray-50 text-secondary font-medium">Anasayfa</a>
+                <a href="araclar.html" class="p-3 rounded-xl hover:bg-gray-50 text-secondary font-medium">Araçlarımız</a>
+                <a href="hakkimizda.html" class="p-3 rounded-xl hover:bg-gray-50 text-secondary font-medium">Hakkımızda</a>
+                <a href="iletisim.html" class="p-3 rounded-xl hover:bg-gray-50 text-secondary font-medium">İletişim</a>
+                <a href="tel:+905300405138" class="p-3 rounded-xl bg-primary text-white font-bold text-center">Hemen Ara</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero-page flex items-center justify-center text-center px-4">
+        <div class="max-w-4xl">
+            <div class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-white/15 backdrop-blur-md border border-white/20 mb-5">
+                <i class="ri-file-list-3-fill text-4xl text-white"></i>
+            </div>
+
+            <h1 class="text-4xl md:text-6xl font-black text-white mb-4 drop-shadow-lg">
+                Kiralama Koşulları
+            </h1>
+
+            <p class="text-base md:text-xl text-gray-100">
+                Araç kiralama sürecinde geçerli genel şartlar ve kullanım bilgileri.
+            </p>
+        </div>
+    </section>
+
+    <!-- Content -->
+    <main class="flex-grow bg-white py-16 md:py-20">
+        <div class="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+
+            <div class="glass-card rounded-2xl p-6 md:p-9 space-y-7">
+
+                <section class="condition-section">
+                    <h2 class="text-2xl font-black text-secondary mb-4 flex items-center gap-3">
+                        <span class="w-9 h-9 rounded-full bg-primary text-white flex items-center justify-center text-sm">1</span>
+                        Genel Koşullar
+                    </h2>
+
+                    <p class="text-gray-600 leading-relaxed mb-3">
+                        Araç kiralama hizmetinden yararlanmak için kiracının geçerli sürücü belgesine ve kimlik belgesine sahip olması gerekir. Araç gruplarına göre yaş, ehliyet süresi ve ek belge şartları değişiklik gösterebilir.
+                    </p>
+
+                    <p class="text-gray-600 leading-relaxed">
+                        Kiralama sözleşmesi yapılırken T.C. kimlik belgesi, sürücü belgesi ve gerekli ödeme/depozito bilgileri ibraz edilmelidir. Yabancı uyruklu müşteriler için pasaport ve geçerli sürücü belgesi talep edilebilir.
+                    </p>
+                </section>
+
+                <section class="condition-section">
+                    <h2 class="text-2xl font-black text-secondary mb-4 flex items-center gap-3">
+                        <span class="w-9 h-9 rounded-full bg-primary text-white flex items-center justify-center text-sm">2</span>
+                        Rezervasyon ve Ödeme
+                    </h2>
+
+                    <p class="text-gray-600 leading-relaxed mb-3">
+                        Rezervasyonlar telefon, web sitesi veya WhatsApp üzerinden yapılabilir. Rezervasyonun kesinleşmesi için müşteri bilgilerinin ve kiralama detaylarının onaylanması gerekir.
+                    </p>
+
+                    <p class="text-gray-600 leading-relaxed mb-3">
+                        Ödeme nakit, kredi kartı veya firma tarafından kabul edilen diğer ödeme yöntemleriyle yapılabilir. Depozito tutarı araç grubuna göre değişebilir.
+                    </p>
+
+                    <p class="text-gray-600 leading-relaxed">
+                        Günlük, haftalık ve aylık kiralama seçeneklerinde fiyatlandırma araç sınıfı, süre ve teslimat koşullarına göre belirlenir.
+                    </p>
+                </section>
+
+                <section class="condition-section">
+                    <h2 class="text-2xl font-black text-secondary mb-4 flex items-center gap-3">
+                        <span class="w-9 h-9 rounded-full bg-primary text-white flex items-center justify-center text-sm">3</span>
+                        Araç Teslimi ve İade
+                    </h2>
+
+                    <p class="text-gray-600 leading-relaxed mb-3">
+                        Araç tesliminde mevcut yakıt seviyesi, kilometre bilgisi ve varsa mevcut hasarlar kayıt altına alınır. Kiracı aracı teslim aldığı şartlara uygun şekilde iade etmekle yükümlüdür.
+                    </p>
+
+                    <p class="text-gray-600 leading-relaxed mb-3">
+                        İade sırasında yeni hasar, eksik ekipman, eksik yakıt veya olağan dışı temizlik ihtiyacı tespit edilirse ilgili bedeller kiracıya yansıtılabilir.
+                    </p>
+
+                    <p class="text-gray-600 leading-relaxed">
+                        Geç teslim durumunda kiralama sözleşmesinde belirtilen şartlara göre ek ücret uygulanabilir.
+                    </p>
+                </section>
+
+                <section class="condition-section">
+                    <h2 class="text-2xl font-black text-secondary mb-4 flex items-center gap-3">
+                        <span class="w-9 h-9 rounded-full bg-primary text-white flex items-center justify-center text-sm">4</span>
+                        Sigorta ve Hasar
+                    </h2>
+
+                    <p class="text-gray-600 leading-relaxed mb-3">
+                        Araçların sigorta kapsamı kiralama sözleşmesinde belirtilen şartlara göre geçerlidir. Sigorta kapsamı dışındaki durumlarda oluşabilecek masraflar kiracıya ait olabilir.
+                    </p>
+
+                    <p class="text-gray-600 leading-relaxed mb-3">
+                        Kaza, hasar veya arıza durumunda kiracı derhal firma yetkililerine bilgi vermeli, gerekli durumlarda polis/jandarma tutanağı ve ilgili belgeleri temin etmelidir.
+                    </p>
+
+                    <p class="text-gray-600 leading-relaxed">
+                        Trafik cezaları, otopark ücretleri, HGS/OGS geçişleri ve benzeri kullanım kaynaklı bedeller kiracı sorumluluğundadır.
+                    </p>
+                </section>
+
+                <section class="condition-section">
+                    <h2 class="text-2xl font-black text-secondary mb-4 flex items-center gap-3">
+                        <span class="w-9 h-9 rounded-full bg-primary text-white flex items-center justify-center text-sm">5</span>
+                        İptal ve Değişiklik Koşulları
+                    </h2>
+
+                    <p class="text-gray-600 leading-relaxed mb-3">
+                        Rezervasyon iptali ve tarih değişikliği, araç müsaitliği ve rezervasyon zamanına göre değerlendirilir.
+                    </p>
+
+                    <p class="text-gray-600 leading-relaxed mb-3">
+                        Teslimata kısa süre kala yapılan iptal taleplerinde araç hazırlık ve operasyon maliyetleri nedeniyle kesinti uygulanabilir.
+                    </p>
+
+                    <p class="text-gray-600 leading-relaxed">
+                        Erken iade durumunda ücret iadesi, sözleşme şartlarına ve kiralama türüne göre değerlendirilir.
+                    </p>
+                </section>
+
+                <section class="condition-section">
+                    <h2 class="text-2xl font-black text-secondary mb-4 flex items-center gap-3">
+                        <span class="w-9 h-9 rounded-full bg-primary text-white flex items-center justify-center text-sm">6</span>
+                        Yasak Kullanımlar
+                    </h2>
+
+                    <ul class="list-disc pl-6 text-gray-600 leading-relaxed space-y-2">
+                        <li>Kiralanan araç, firma onayı olmadan üçüncü şahıslara devredilemez.</li>
+                        <li>Alkol, uyuşturucu veya benzeri maddelerin etkisi altında araç kullanılamaz.</li>
+                        <li>Araç yarış, test sürüşü, çekme/itme veya kanun dışı faaliyetlerde kullanılamaz.</li>
+                        <li>Firma izni olmadan araç yurt dışına çıkarılamaz.</li>
+                        <li>Araç içinde sigara içilmesi, ağır koku veya kalıcı kirlilik oluşturulması halinde temizlik bedeli uygulanabilir.</li>
+                        <li>Evcil hayvan taşınması için önceden bilgi verilmelidir.</li>
+                    </ul>
+                </section>
+
+                <section class="condition-section">
+                    <h2 class="text-2xl font-black text-secondary mb-4 flex items-center gap-3">
+                        <span class="w-9 h-9 rounded-full bg-primary text-white flex items-center justify-center text-sm">7</span>
+                        Diğer Hususlar
+                    </h2>
+
+                    <p class="text-gray-600 leading-relaxed mb-3">
+                        Mücbir sebepler, operasyonel aksaklıklar veya araç müsaitliği kaynaklı durumlarda firma eşdeğer araç sağlama veya rezervasyonu yeniden planlama hakkını saklı tutar.
+                    </p>
+
+                    <p class="text-gray-600 leading-relaxed mb-3">
+                        Arıza durumunda firma ile iletişime geçilmeden araca müdahale edilmemelidir. Yol yardım ve yedek araç talepleri duruma göre değerlendirilir.
+                    </p>
+
+                    <p class="text-gray-600 leading-relaxed">
+                        Kiralama işlemi sırasında imzalanan sözleşme ve ek protokoller esas alınır.
+                    </p>
+                </section>
+
+            </div>
+
+            <section class="glass-card rounded-2xl p-8 mt-8 text-center">
+                <h2 class="text-2xl md:text-3xl font-black text-secondary mb-4">
+                    Detaylı Bilgi Almak İster misiniz?
+                </h2>
+
+                <p class="text-gray-600 mb-7">
+                    Kiralama koşulları hakkında daha fazla bilgi için bizimle iletişime geçebilirsiniz.
+                </p>
+
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="iletisim.html"
+                       class="inline-flex items-center justify-center gap-2 px-8 py-3 bg-primary hover:bg-primaryDark text-white font-bold rounded-full transition-all">
+                        <i class="ri-customer-service-line"></i>
+                        İletişim
+                    </a>
+
+                    <a href="https://wa.me/905300405138?text=Merhaba%20Kiral%C4%B1k%20Ara%C3%A7lar%20Hakk%C4%B1nda%20Bilgi%20Almak%20%C4%B0stiyorum"
+                       target="_blank"
+                       class="inline-flex items-center justify-center gap-2 px-8 py-3 bg-[#25D366] hover:bg-[#20b858] text-white font-bold rounded-full transition-all">
+                        <i class="ri-whatsapp-line"></i>
+                        WhatsApp
+                    </a>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-secondary text-white pt-16 pb-8 mt-auto relative overflow-hidden">
+        <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-primary via-red-400 to-primary"></div>
+
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-10 mb-12">
+
+                <div>
+                    <a href="index.html" class="flex items-center gap-3 mb-6">
+                        <span class="text-2xl font-black text-white tracking-tighter">
+                            ARAS <span class="text-primary">OTO FİLO</span>
+                        </span>
+
+                        <img src="resim/images.png"
+                             alt="Avis Logo"
+                             class="h-9 w-auto object-contain">
+                    </a>
+
+                    <p class="text-gray-400 mb-6 text-sm leading-relaxed">
+                        Kurumsal Kiralamanın Adresi
+                    </p>
+
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 flex items-center justify-center bg-white/5 rounded-full hover:bg-primary hover:text-white transition-all" aria-label="Facebook">
+                            <i class="ri-facebook-fill"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 flex items-center justify-center bg-white/5 rounded-full hover:bg-primary hover:text-white transition-all" aria-label="Twitter">
+                            <i class="ri-twitter-x-fill"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 flex items-center justify-center bg-white/5 rounded-full hover:bg-primary hover:text-white transition-all" aria-label="Instagram">
+                            <i class="ri-instagram-fill"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="text-lg font-bold mb-6 text-white">Hızlı Erişim</h3>
+                    <ul class="space-y-3 text-sm">
+                        <li><a href="index.html" class="text-gray-400 hover:text-primary transition-colors">Anasayfa</a></li>
+                        <li><a href="araclar.html" class="text-gray-400 hover:text-primary transition-colors">Araçlarımız</a></li>
+                        <li><a href="hakkimizda.html" class="text-gray-400 hover:text-primary transition-colors">Hakkımızda</a></li>
+                        <li><a href="iletisim.html" class="text-gray-400 hover:text-primary transition-colors">İletişim</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="text-lg font-bold mb-6 text-white">Yardım</h3>
+                    <ul class="space-y-3 text-sm">
+                        <li><a href="sss.html" class="text-gray-400 hover:text-primary transition-colors">Sıkça Sorulan Sorular</a></li>
+                        <li><a href="kosullar.html" class="text-gray-400 hover:text-primary transition-colors">Kiralama Koşulları</a></li>
+                        <li><a href="gizlilik.html" class="text-gray-400 hover:text-primary transition-colors">Gizlilik Politikası</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="text-lg font-bold mb-6 text-white">İletişim</h3>
+                    <ul class="space-y-4 text-sm">
+                        <li class="flex items-start gap-3">
+                            <i class="ri-map-pin-line text-primary text-lg mt-0.5"></i>
+                            <span class="text-gray-400">İstanbul</span>
+                        </li>
+
+                        <li class="flex items-center gap-3">
+                            <i class="ri-phone-line text-primary text-lg"></i>
+                            <a href="tel:+905300405138" class="dynamic-phone-link text-gray-400 hover:text-white transition-colors">
+                                0530 040 51 38
+                            </a>
+                        </li>
+
+                        <li class="flex items-center gap-3">
+                            <i class="ri-mail-line text-primary text-lg"></i>
+                            <a href="mailto:info@arasotofilo.com" class="text-gray-400 hover:text-white transition-colors">
+                                info@arasotofilo.com
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="border-t border-white/10 pt-8 text-center">
+                <p class="text-gray-500 text-xs">
+                    © 2026 ARAS OTO FİLO. Tüm hakları saklıdır.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Sticky Buttons -->
+    <a href="https://wa.me/905300405138?text=Merhaba%20Kiral%C4%B1k%20Ara%C3%A7lar%20Hakk%C4%B1nda%20Bilgi%20Almak%20%C4%B0stiyorum"
+       target="_blank"
+       class="dynamic-whatsapp-link sticky-btn bg-[#25D366] text-white hover:bg-[#20b858] right-6">
+        <i class="fab fa-whatsapp text-2xl"></i>
+        <span class="hidden md:inline">Destek Hattı</span>
+    </a>
+
+    <a href="tel:+905300405138"
+       class="dynamic-phone-link sticky-btn bg-primary text-white hover:bg-primaryDark left-6">
+        <i class="ri-phone-fill text-xl"></i>
+        <span class="hidden md:inline">Bizi Arayın</span>
+    </a>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const mobileMenuButton = document.getElementById("mobile-menu-button");
+            const mobileMenu = document.getElementById("mobile-menu");
+
+            if (mobileMenuButton && mobileMenu) {
+                mobileMenuButton.addEventListener("click", function () {
+                    mobileMenu.classList.toggle("hidden");
+                });
+
+                document.addEventListener("click", function (event) {
+                    if (!mobileMenuButton.contains(event.target) && !mobileMenu.contains(event.target)) {
+                        mobileMenu.classList.add("hidden");
+                    }
+                });
+            }
+        });
+    </script>
+
+</body>
+</html>

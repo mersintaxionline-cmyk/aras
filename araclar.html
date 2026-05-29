@@ -1,0 +1,1965 @@
+<!DOCTYPE html>
+<html lang="tr" data-theme="theme_red">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Araçlarımız - ARAS OTO FİLO</title>
+    <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+    <link rel="stylesheet" href="../../cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link href="../../cdn.jsdelivr.net/npm/remixicon%404.2.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com/" />
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet">
+
+    <script>
+        window.SiteConfig = {
+            phone: "+905300405138",
+            phone_display: "0530 040 51 38",
+            whatsapp_text: "Merhaba Kiralık Araçlar Hakkında Bilgi Almak İstiyorum",
+            whatsapp_phone: "905300405138",
+            site_name: "ARAS OTO FİLO",
+            site_title: "ARAS OTO FİLO - Araç Kiralama",
+            site_slogan: "Kurumsal Kiralamanın Adresi",
+            site_email: "info@arasotofilo.com",
+            logo_text_1: "ARAS",
+            logo_text_2: "OTO FİLO",
+            contact_mode: "both",
+            active_theme: "theme_red"
+        };
+    </script>
+                <script>
+              tailwind.config = {
+                theme: {
+                  extend: {
+                    colors: {
+                      primary: "#d6001c",
+                      primaryDark: "#a30015",
+                      blue: { 50: '#fef2f2', 100: '#fee2e2', 200: '#fecaca', 300: '#fca5a5', 400: '#f87171', 500: '#ef4444', 600: '#dc2626', 700: '#b91c1c', 800: '#991b1b', 900: '#7f1d1d', 950: '#450a0a' },
+                      secondary: "#0f172a",
+                      glass: "rgba(255, 255, 255, 0.65)",
+                      glassBorder: "rgba(255, 255, 255, 0.4)",
+                      glassHover: "rgba(255, 255, 255, 0.85)",
+                    },
+                    fontFamily: {
+                        sans: ['Outfit', 'sans-serif'],
+                    },
+                    backdropBlur: {
+                        xs: '2px',
+                    },
+                    boxShadow: {
+                        premium: '0 12px 35px rgba(15, 23, 42, 0.08)'
+                    }
+                  },
+                },
+              };
+            </script>
+                            <style>
+              
+body {
+    font-family: "Outfit", sans-serif;
+    background: #ffffff !important;
+    background-attachment: fixed;
+    color: #334155;
+}
+.glass-panel {
+    background: rgba(255,255,255,0.96) !important;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(230,230,230,0.8);
+    box-shadow: 0 8px 32px 0 rgba(31,38,135,0.05);
+}
+.glass-card {
+    background: rgba(255,255,255,0.98) !important;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid rgba(230,230,230,0.9);
+    transition: all 0.3s ease;
+}
+.glass-card:hover {
+    background: #ffffff !important;
+    transform: translateY(-3px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.06);
+    border-color: #d1d5db;
+}
+
+            
+.sticky-btn {
+    position: fixed;
+    bottom: 25px;
+    z-index: 50;
+    padding: 12px 24px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 700;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    transition: transform 0.3s ease;
+}
+.sticky-btn:hover {
+    transform: translateY(-3px);
+}
+@media (max-width: 768px) {
+    .sticky-btn {
+        padding: 12px 14px;
+    }
+}
+</style>
+</head>
+<body class="flex flex-col min-h-screen">
+
+    <!-- Navbar -->
+    <header class="sticky top-0 z-50 glass-panel w-full">
+        <div class="bg-primary/90 text-white py-1.5 text-center text-xs font-medium tracking-wide backdrop-blur-sm">
+            Türkiye'nin En Modern Araç Kiralama Deneyimi
+        </div>
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-4">
+                <a href="index.html" class="flex items-center gap-3 leading-none group">
+                    <span class="text-2xl font-black text-secondary tracking-tighter group-hover:text-primary transition-colors whitespace-nowrap">
+                        ARAS <span class="text-primary">OTO FİLO</span>
+                    </span>
+
+                    <img src="resim/images.png"
+                         alt="Avis Logo"
+                         class="h-10 w-auto object-contain">
+                </a>
+
+                <nav class="hidden md:flex space-x-8 items-center">
+                    <a href="index.html" class="text-secondary font-semibold text-sm uppercase tracking-wide hover:text-primary hover:scale-105 transition-all ">Anasayfa</a>
+                    <a href="araclar.html" class="text-secondary font-semibold text-sm uppercase tracking-wide hover:text-primary hover:scale-105 transition-all text-primary font-bold border-b-2 border-primary">Araçlarımız</a>
+                    <a href="hakkimizda.html" class="text-secondary font-semibold text-sm uppercase tracking-wide hover:text-primary hover:scale-105 transition-all ">Hakkımızda</a>
+                    <a href="iletisim.html" class="text-secondary font-semibold text-sm uppercase tracking-wide hover:text-primary hover:scale-105 transition-all ">İletişim</a>
+
+                    <a href="tel:+905300405138" class="dynamic-phone-link bg-gradient-to-r from-primary to-primaryDark text-white py-2.5 px-6 rounded-full font-semibold shadow-lg hover:shadow-blue-300/50 transition-all flex items-center gap-2 transform hover:-translate-y-0.5">
+                        <i class="ri-phone-fill"></i> Hemen Ara
+                    </a>
+                </nav>
+
+                <button id="mobile-menu-button" class="md:hidden text-secondary p-2 rounded-lg hover:bg-gray-100/50 transition-colors">
+                    <i class="ri-menu-4-line text-2xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <nav id="mobile-menu" class="md:hidden hidden glass-panel border-t border-gray-200/50 absolute w-full">
+            <div class="flex flex-col p-4 space-y-3">
+                <a href="index.html" class="p-3 rounded-xl hover:bg-gray-50/50 text-secondary font-medium">Anasayfa</a>
+                <a href="araclar.html" class="p-3 rounded-xl bg-primary text-white font-bold">Araçlarımız</a>
+                <a href="hakkimizda.html" class="p-3 rounded-xl hover:bg-gray-50/50 text-secondary font-medium">Hakkımızda</a>
+                <a href="iletisim.html" class="p-3 rounded-xl hover:bg-gray-50/50 text-secondary font-medium">İletişim</a>
+            </div>
+        </nav>
+    </header>
+    <style>
+      .page-header {
+        background-image: url('https://images.unsplash.com/photo-1485291571150-772bcfc10da5?q=80&amp;w=2128&amp;auto=format&amp;fit=crop');
+        background-position: center;
+        background-size: cover;
+        height: 300px;
+        position: relative;
+      }
+
+      .header-overlay {
+        background: linear-gradient(120deg, rgba(15, 23, 42, 0.88), rgba(214, 0, 28, 0.35));
+      }
+
+      select {
+          -webkit-appearance: none;
+          -moz-appearance: none;
+          appearance: none;
+          background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%23d6001c' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3e%3c/svg%3e");
+          background-position: right 1rem center;
+          background-repeat: no-repeat;
+          background-size: 1.5em 1.5em;
+          padding-right: 2.5rem;
+      }
+    </style>
+
+    <section class="page-header flex items-center justify-center mb-12">
+        <div class="absolute inset-0 header-overlay"></div>
+        <div class="relative z-10 text-center px-4">
+            <h1 class="text-4xl md:text-6xl font-black text-white mb-3 drop-shadow-md">Araç Filomuz</h1>
+            <p class="text-blue-100 text-lg max-w-xl mx-auto">Her bütçeye ve ihtiyaca uygun, bakımlı ve son model kiralık araçlar.</p>
+        </div>
+    </section>
+
+    <!-- Filters Section -->
+    <section class="mb-8">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div class="glass-panel p-6 rounded-2xl">
+                <h3 class="text-xl font-bold text-secondary mb-4 flex items-center gap-2">
+                    <i class="ri-filter-3-line text-primary"></i> Araç Filtrele
+                </h3>
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+                    <div>
+                        <label class="block text-sm font-semibold text-gray-700 mb-2">Yakıt Tipi</label>
+                        <select id="filter-fuel" class="w-full px-4 py-2.5 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent">
+                            <option value="">Tümü</option>
+                            <option value="Benzin">Benzin</option>
+                            <option value="Dizel">Dizel</option>
+                            <option value="Hibrit">Hibrit</option>
+                            <option value="Elektrik">Elektrik</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-semibold text-gray-700 mb-2">Vites Tipi</label>
+                        <select id="filter-gear" class="w-full px-4 py-2.5 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent">
+                            <option value="">Tümü</option>
+                            <option value="Otomatik">Otomatik</option>
+                            <option value="Manuel">Manuel</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-semibold text-gray-700 mb-2">Fiyat Sırala</label>
+                        <select id="filter-price" class="w-full px-4 py-2.5 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent">
+                            <option value="">Varsayılan</option>
+                            <option value="asc">Düşükten Yükseğe</option>
+                            <option value="desc">Yüksekten Düşüğe</option>
+                        </select>
+                    </div>
+                    <div class="flex items-end">
+                        <button id="reset-filters" class="w-full px-4 py-2.5 bg-gray-200 hover:bg-gray-300 text-gray-700 font-semibold rounded-lg transition-colors">
+                            <i class="ri-refresh-line mr-2"></i>Sıfırla
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mb-20">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div class="mb-6">
+                <p class="text-gray-600 text-center">
+                    <span id="car-count" class="font-bold text-primary">24</span> araç bulundu
+                </p>
+            </div>
+
+            <div id="car-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+                                <div class="car-filter-item" data-fuel="Dizel" data-gear="Otomatik" data-price="1200">
+                    <div class="car-card bg-white rounded-xl shadow-premium overflow-hidden transition-all duration-300 border border-gray-100 hover:border-secondary flex flex-col group h-full">
+                        <a href="https://wa.me/905300405138?text=Merhaba+Renault+Clio+Ara%C3%A7+Kiralamak+%C4%B0stiyorum." class="block relative overflow-hidden" target="_blank">
+                            <div class="relative h-56 overflow-hidden">
+                                <img src="resim/clio.png" alt="Renault Clio" class="w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-110">
+                                <div class="absolute top-3 left-3 bg-secondary text-primary text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider shadow-lg z-10">
+                                    Ekonomik Seçim                                </div>
+                                <div class="absolute top-3 right-3 bg-green-100 text-green-800 text-[10px] font-bold px-2 py-1 rounded shadow-md z-10 border border-green-200">
+                                    <span class="flex items-center gap-1"><i class="ri-shield-check-fill text-green-600"></i> TAM KASKO</span>
+                                </div>
+                                <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                            </div>
+                        </a>
+                        <div class="p-5 flex flex-col flex-grow">
+                            <div class="mb-3">
+                                <h3 class="text-xl font-bold text-primary mb-1 truncate" title="Renault Clio">Renault Clio</h3>
+                                <span class="inline-flex items-center gap-1 text-xs font-semibold text-gray-500 bg-gray-100 px-2 py-1 rounded">
+                                    <i class="ri-calendar-line"></i> 2025 Model                                </span>
+                            </div>
+                            <div class="flex items-center justify-between border-t border-b border-gray-100 py-3 mb-4">
+                                <div class="flex flex-col items-center flex-1 border-r border-gray-100">
+                                    <i class="ri-user-line text-primary text-lg mb-1"></i>
+                                    <span class="text-xs font-semibold text-gray-600">5 Kişi</span>
+                                </div>
+                                <div class="flex flex-col items-center flex-1 border-r border-gray-100">
+                                    <i class="ri-briefcase-line text-primary text-lg mb-1"></i>
+                                    <span class="text-xs font-semibold text-gray-600">2 Bavul</span>
+                                </div>
+                                <div class="flex flex-col items-center flex-1 border-r border-gray-100">
+                                    <i class="ri-gas-station-line text-primary text-lg mb-1"></i>
+                                    <span class="text-xs font-semibold text-gray-600">Dizel</span>
+                                </div>
+                                <div class="flex flex-col items-center flex-1">
+                                    <i class="ri-steering-2-line text-primary text-lg mb-1"></i>
+                                    <span class="text-xs font-semibold text-gray-600">Otomatik</span>
+                                </div>
+                            </div>
+                            <div class="mt-auto space-y-3">
+                                <div style="background-color: #eff6ff; border: 1px solid #dbeafe; padding: 0.6rem; border-radius: 0.5rem; display: flex; align-items: center; justify-content: space-between;">
+                                    <span style="font-size: 13px; font-weight: 700; color: #1e40af; text-transform: uppercase;">Aylık Kiralama</span>
+                                    <span style="font-size: 17px; font-weight: 800; color: #1e3a8a;">₺21200</span>
+                                </div>
+                                <div class="grid grid-cols-2 gap-3">
+                                    <div class="flex flex-col items-center justify-center p-2 rounded-lg" style="background-color: #dc2626; color: white;">
+                                        <span style="font-size: 10px; font-weight: 700; color: rgba(255,255,255,0.8); text-transform: uppercase;">Günlük</span>
+                                        <span style="font-size: 1.125rem; font-weight: 900; color: #ffffff;">₺1200</span>
+                                    </div>
+                                    <div class="flex flex-col items-center justify-center p-2 rounded-lg" style="background-color: #dc2626; color: white;">
+                                        <span style="font-size: 10px; font-weight: 700; color: rgba(255,255,255,0.8); text-transform: uppercase;">Depozito</span>
+                                        <span style="font-size: 1.125rem; font-weight: 900; color: #ffffff;">₺4.000</span>
+                                    </div>
+                                </div>
+                                <div class="grid grid-cols-2 gap-3 pt-2">
+                                    <a href="https://wa.me/905300405138?text=Merhaba+Renault+Clio+Ara%C3%A7+Kiralamak+%C4%B0stiyorum." target="_blank" data-wa-text="Merhaba Renault Clio Araç Kiralamak İstiyorum." class="dynamic-whatsapp-link flex items-center justify-center py-2.5 rounded-lg bg-[#25D366] text-white hover:bg-[#128C7E] transition-colors font-bold text-sm shadow-sm">
+                                        <i class="ri-whatsapp-line text-lg mr-1"></i> WhatsApp
+                                    </a>
+                                    <a href="tel:+905300405138" class="dynamic-phone-link flex items-center justify-center py-2.5 rounded-lg bg-black text-white hover:bg-gray-800 transition-all font-bold text-sm shadow-sm">
+                                        <i class="ri-phone-line text-lg mr-1"></i> Bizi Arayın
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                                <div class="car-filter-item" data-fuel="Dizel" data-gear="Otomatik" data-price="1200">
+                    <div class="car-card bg-white rounded-xl shadow-premium overflow-hidden transition-all duration-300 border border-gray-100 hover:border-secondary flex flex-col group h-full">
+                        <a href="https://wa.me/905300405138?text=Merhaba+Fiat+Egea+Ara%C3%A7+Kiralamak+%C4%B0stiyorum." class="block relative overflow-hidden" target="_blank">
+                            <div class="relative h-56 overflow-hidden">
+                                <img src="resim/egea.png" alt="Fiat Egea" class="w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-110">
+                                <div class="absolute top-3 left-3 bg-secondary text-primary text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider shadow-lg z-10">
+                                    Ekonomik Seçim                                </div>
+                                <div class="absolute top-3 right-3 bg-green-100 text-green-800 text-[10px] font-bold px-2 py-1 rounded shadow-md z-10 border border-green-200">
+                                    <span class="flex items-center gap-1"><i class="ri-shield-check-fill text-green-600"></i> TAM KASKO</span>
+                                </div>
+                                <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                            </div>
+                        </a>
+                        <div class="p-5 flex flex-col flex-grow">
+                            <div class="mb-3">
+                                <h3 class="text-xl font-bold text-primary mb-1 truncate" title="Fiat Egea">Fiat Egea</h3>
+                                <span class="inline-flex items-center gap-1 text-xs font-semibold text-gray-500 bg-gray-100 px-2 py-1 rounded">
+                                    <i class="ri-calendar-line"></i> 2025 Model                                </span>
+                            </div>
+                            <div class="flex items-center justify-between border-t border-b border-gray-100 py-3 mb-4">
+                                <div class="flex flex-col items-center flex-1 border-r border-gray-100">
+                                    <i class="ri-user-line text-primary text-lg mb-1"></i>
+                                    <span class="text-xs font-semibold text-gray-600">5 Kişi</span>
+                                </div>
+                                <div class="flex flex-col items-center flex-1 border-r border-gray-100">
+                                    <i class="ri-briefcase-line text-primary text-lg mb-1"></i>
+                                    <span class="text-xs font-semibold text-gray-600">3 Bavul</span>
+                                </div>
+                                <div class="flex flex-col items-center flex-1 border-r border-gray-100">
+                                    <i class="ri-gas-station-line text-primary text-lg mb-1"></i>
+                                    <span class="text-xs font-semibold text-gray-600">Dizel</span>
+                                </div>
+                                <div class="flex flex-col items-center flex-1">
+                                    <i class="ri-steering-2-line text-primary text-lg mb-1"></i>
+                                    <span class="text-xs font-semibold text-gray-600">Otomatik</span>
+                                </div>
+                            </div>
+                            <div class="mt-auto space-y-3">
+                                <div style="background-color: #eff6ff; border: 1px solid #dbeafe; padding: 0.6rem; border-radius: 0.5rem; display: flex; align-items: center; justify-content: space-between;">
+                                    <span style="font-size: 13px; font-weight: 700; color: #1e40af; text-transform: uppercase;">Aylık Kiralama</span>
+                                    <span style="font-size: 17px; font-weight: 800; color: #1e3a8a;">₺21200</span>
+                                </div>
+                                <div class="grid grid-cols-2 gap-3">
+                                    <div class="flex flex-col items-center justify-center p-2 rounded-lg" style="background-color: #dc2626; color: white;">
+                                        <span style="font-size: 10px; font-weight: 700; color: rgba(255,255,255,0.8); text-transform: uppercase;">Günlük</span>
+                                        <span style="font-size: 1.125rem; font-weight: 900; color: #ffffff;">₺1200</span>
+                                    </div>
+                                    <div class="flex flex-col items-center justify-center p-2 rounded-lg" style="background-color: #dc2626; color: white;">
+                                        <span style="font-size: 10px; font-weight: 700; color: rgba(255,255,255,0.8); text-transform: uppercase;">Depozito</span>
+                                        <span style="font-size: 1.125rem; font-weight: 900; color: #ffffff;">₺4.000</span>
+                                    </div>
+                                </div>
+                                <div class="grid grid-cols-2 gap-3 pt-2">
+                                    <a href="https://wa.me/905300405138?text=Merhaba+Fiat+Egea+Ara%C3%A7+Kiralamak+%C4%B0stiyorum." target="_blank" data-wa-text="Merhaba Fiat Egea Araç Kiralamak İstiyorum." class="dynamic-whatsapp-link flex items-center justify-center py-2.5 rounded-lg bg-[#25D366] text-white hover:bg-[#128C7E] transition-colors font-bold text-sm shadow-sm">
+                                        <i class="ri-whatsapp-line text-lg mr-1"></i> WhatsApp
+                                    </a>
+                                    <a href="tel:+905300405138" class="dynamic-phone-link flex items-center justify-center py-2.5 rounded-lg bg-black text-white hover:bg-gray-800 transition-all font-bold text-sm shadow-sm">
+                                        <i class="ri-phone-line text-lg mr-1"></i> Bizi Arayın
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                                <div class="car-filter-item" data-fuel="Dizel" data-gear="Otomatik" data-price="1200">
+                    <div class="car-card bg-white rounded-xl shadow-premium overflow-hidden transition-all duration-300 border border-gray-100 hover:border-secondary flex flex-col group h-full">
+                        <a href="https://wa.me/905300405138?text=Merhaba+Hyundai+i20+Ara%C3%A7+Kiralamak+%C4%B0stiyorum." class="block relative overflow-hidden" target="_blank">
+                            <div class="relative h-56 overflow-hidden">
+                                <img src="resim/i20.png" alt="Hyundai i20" class="w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-110">
+                                <div class="absolute top-3 left-3 bg-secondary text-primary text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider shadow-lg z-10">
+                                    Ekonomik Seçim                                </div>
+                                <div class="absolute top-3 right-3 bg-green-100 text-green-800 text-[10px] font-bold px-2 py-1 rounded shadow-md z-10 border border-green-200">
+                                    <span class="flex items-center gap-1"><i class="ri-shield-check-fill text-green-600"></i> TAM KASKO</span>
+                                </div>
+                                <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                            </div>
+                        </a>
+                        <div class="p-5 flex flex-col flex-grow">
+                            <div class="mb-3">
+                                <h3 class="text-xl font-bold text-primary mb-1 truncate" title="Hyundai i20">Hyundai i20</h3>
+                                <span class="inline-flex items-center gap-1 text-xs font-semibold text-gray-500 bg-gray-100 px-2 py-1 rounded">
+                                    <i class="ri-calendar-line"></i> 2025 Model                                </span>
+                            </div>
+                            <div class="flex items-center justify-between border-t border-b border-gray-100 py-3 mb-4">
+                                <div class="flex flex-col items-center flex-1 border-r border-gray-100">
+                                    <i class="ri-user-line text-primary text-lg mb-1"></i>
+                                    <span class="text-xs font-semibold text-gray-600">5 Kişi</span>
+                                </div>
+                                <div class="flex flex-col items-center flex-1 border-r border-gray-100">
+                                    <i class="ri-briefcase-line text-primary text-lg mb-1"></i>
+                                    <span class="text-xs font-semibold text-gray-600">2 Bavul</span>
+                                </div>
+                                <div class="flex flex-col items-center flex-1 border-r border-gray-100">
+                                    <i class="ri-gas-station-line text-primary text-lg mb-1"></i>
+                                    <span class="text-xs font-semibold text-gray-600">Dizel</span>
+                                </div>
+                                <div class="flex flex-col items-center flex-1">
+                                    <i class="ri-steering-2-line text-primary text-lg mb-1"></i>
+                                    <span class="text-xs font-semibold text-gray-600">Otomatik</span>
+                                </div>
+                            </div>
+                            <div class="mt-auto space-y-3">
+                                <div style="background-color: #eff6ff; border: 1px solid #dbeafe; padding: 0.6rem; border-radius: 0.5rem; display: flex; align-items: center; justify-content: space-between;">
+                                    <span style="font-size: 13px; font-weight: 700; color: #1e40af; text-transform: uppercase;">Aylık Kiralama</span>
+                                    <span style="font-size: 17px; font-weight: 800; color: #1e3a8a;">₺21200</span>
+                                </div>
+                                <div class="grid grid-cols-2 gap-3">
+                                    <div class="flex flex-col items-center justify-center p-2 rounded-lg" style="background-color: #dc2626; color: white;">
+                                        <span style="font-size: 10px; font-weight: 700; color: rgba(255,255,255,0.8); text-transform: uppercase;">Günlük</span>
+                                        <span style="font-size: 1.125rem; font-weight: 900; color: #ffffff;">₺1200</span>
+                                    </div>
+                                    <div class="flex flex-col items-center justify-center p-2 rounded-lg" style="background-color: #dc2626; color: white;">
+                                        <span style="font-size: 10px; font-weight: 700; color: rgba(255,255,255,0.8); text-transform: uppercase;">Depozito</span>
+                                        <span style="font-size: 1.125rem; font-weight: 900; color: #ffffff;">₺4.000</span>
+                                    </div>
+                                </div>
+                                <div class="grid grid-cols-2 gap-3 pt-2">
+                                    <a href="https://wa.me/905300405138?text=Merhaba+Hyundai+i20+Ara%C3%A7+Kiralamak+%C4%B0stiyorum." target="_blank" data-wa-text="Merhaba Hyundai i20 Araç Kiralamak İstiyorum." class="dynamic-whatsapp-link flex items-center justify-center py-2.5 rounded-lg bg-[#25D366] text-white hover:bg-[#128C7E] transition-colors font-bold text-sm shadow-sm">
+                                        <i class="ri-whatsapp-line text-lg mr-1"></i> WhatsApp
+                                    </a>
+                                    <a href="tel:+905300405138" class="dynamic-phone-link flex items-center justify-center py-2.5 rounded-lg bg-black text-white hover:bg-gray-800 transition-all font-bold text-sm shadow-sm">
+                                        <i class="ri-phone-line text-lg mr-1"></i> Bizi Arayın
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                                <div class="car-filter-item" data-fuel="Dizel" data-gear="Otomatik" data-price="1200">
+                    <div class="car-card bg-white rounded-xl shadow-premium overflow-hidden transition-all duration-300 border border-gray-100 hover:border-secondary flex flex-col group h-full">
+                        <a href="https://wa.me/905300405138?text=Merhaba+Opel+Corsa+Ara%C3%A7+Kiralamak+%C4%B0stiyorum." class="block relative overflow-hidden" target="_blank">
+                            <div class="relative h-56 overflow-hidden">
+                                <img src="resim/corsa.png" alt="Opel Corsa" class="w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-110">
+                                <div class="absolute top-3 left-3 bg-secondary text-primary text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider shadow-lg z-10">
+                                    Ekonomik Seçim                                </div>
+                                <div class="absolute top-3 right-3 bg-green-100 text-green-800 text-[10px] font-bold px-2 py-1 rounded shadow-md z-10 border border-green-200">
+                                    <span class="flex items-center gap-1"><i class="ri-shield-check-fill text-green-600"></i> TAM KASKO</span>
+                                </div>
+                                <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                            </div>
+                        </a>
+                        <div class="p-5 flex flex-col flex-grow">
+                            <div class="mb-3">
+                                <h3 class="text-xl font-bold text-primary mb-1 truncate" title="Opel Corsa">Opel Corsa</h3>
+                                <span class="inline-flex items-center gap-1 text-xs font-semibold text-gray-500 bg-gray-100 px-2 py-1 rounded">
+                                    <i class="ri-calendar-line"></i> 2025 Model                                </span>
+                            </div>
+                            <div class="flex items-center justify-between border-t border-b border-gray-100 py-3 mb-4">
+                                <div class="flex flex-col items-center flex-1 border-r border-gray-100">
+                                    <i class="ri-user-line text-primary text-lg mb-1"></i>
+                                    <span class="text-xs font-semibold text-gray-600">5 Kişi</span>
+                                </div>
+                                <div class="flex flex-col items-center flex-1 border-r border-gray-100">
+                                    <i class="ri-briefcase-line text-primary text-lg mb-1"></i>
+                                    <span class="text-xs font-semibold text-gray-600">2 Bavul</span>
+                                </div>
+                                <div class="flex flex-col items-center flex-1 border-r border-gray-100">
+                                    <i class="ri-gas-station-line text-primary text-lg mb-1"></i>
+                                    <span class="text-xs font-semibold text-gray-600">Dizel</span>
+                                </div>
+                                <div class="flex flex-col items-center flex-1">
+                                    <i class="ri-steering-2-line text-primary text-lg mb-1"></i>
+                                    <span class="text-xs font-semibold text-gray-600">Otomatik</span>
+                                </div>
+                            </div>
+                            <div class="mt-auto space-y-3">
+                                <div style="background-color: #eff6ff; border: 1px solid #dbeafe; padding: 0.6rem; border-radius: 0.5rem; display: flex; align-items: center; justify-content: space-between;">
+                                    <span style="font-size: 13px; font-weight: 700; color: #1e40af; text-transform: uppercase;">Aylık Kiralama</span>
+                                    <span style="font-size: 17px; font-weight: 800; color: #1e3a8a;">₺21200</span>
+                                </div>
+                                <div class="grid grid-cols-2 gap-3">
+                                    <div class="flex flex-col items-center justify-center p-2 rounded-lg" style="background-color: #dc2626; color: white;">
+                                        <span style="font-size: 10px; font-weight: 700; color: rgba(255,255,255,0.8); text-transform: uppercase;">Günlük</span>
+                                        <span style="font-size: 1.125rem; font-weight: 900; color: #ffffff;">₺1200</span>
+                                    </div>
+                                    <div class="flex flex-col items-center justify-center p-2 rounded-lg" style="background-color: #dc2626; color: white;">
+                                        <span style="font-size: 10px; font-weight: 700; color: rgba(255,255,255,0.8); text-transform: uppercase;">Depozito</span>
+                                        <span style="font-size: 1.125rem; font-weight: 900; color: #ffffff;">₺4.000</span>
+                                    </div>
+                                </div>
+                                <div class="grid grid-cols-2 gap-3 pt-2">
+                                    <a href="https://wa.me/905300405138?text=Merhaba+Opel+Corsa+Ara%C3%A7+Kiralamak+%C4%B0stiyorum." target="_blank" data-wa-text="Merhaba Opel Corsa Araç Kiralamak İstiyorum." class="dynamic-whatsapp-link flex items-center justify-center py-2.5 rounded-lg bg-[#25D366] text-white hover:bg-[#128C7E] transition-colors font-bold text-sm shadow-sm">
+                                        <i class="ri-whatsapp-line text-lg mr-1"></i> WhatsApp
+                                    </a>
+                                    <a href="tel:+905300405138" class="dynamic-phone-link flex items-center justify-center py-2.5 rounded-lg bg-black text-white hover:bg-gray-800 transition-all font-bold text-sm shadow-sm">
+                                        <i class="ri-phone-line text-lg mr-1"></i> Bizi Arayın
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                                <div class="car-filter-item" data-fuel="Dizel" data-gear="Otomatik" data-price="1100">
+                    <div class="car-card bg-white rounded-xl shadow-premium overflow-hidden transition-all duration-300 border border-gray-100 hover:border-secondary flex flex-col group h-full">
+                        <a href="https://wa.me/905300405138?text=Merhaba+Ford+Tourneo+Ara%C3%A7+Kiralamak+%C4%B0stiyorum." class="block relative overflow-hidden" target="_blank">
+                            <div class="relative h-56 overflow-hidden">
+                                <img src="resim/tourneo.png" alt="Ford Tourneo" class="w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-110">
+                                <div class="absolute top-3 left-3 bg-secondary text-primary text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider shadow-lg z-10">
+                                    Özel Fırsat                                </div>
+                                <div class="absolute top-3 right-3 bg-green-100 text-green-800 text-[10px] font-bold px-2 py-1 rounded shadow-md z-10 border border-green-200">
+                                    <span class="flex items-center gap-1"><i class="ri-shield-check-fill text-green-600"></i> TAM KASKO</span>
+                                </div>
+                                <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                            </div>
+                        </a>
+                        <div class="p-5 flex flex-col flex-grow">
+                            <div class="mb-3">
+                                <h3 class="text-xl font-bold text-primary mb-1 truncate" title="Ford Tourneo">Ford Tourneo</h3>
+                                <span class="inline-flex items-center gap-1 text-xs font-semibold text-gray-500 bg-gray-100 px-2 py-1 rounded">
+                                    <i class="ri-calendar-line"></i> 2025 Model                                </span>
+                            </div>
+                            <div class="flex items-center justify-between border-t border-b border-gray-100 py-3 mb-4">
+                                <div class="flex flex-col items-center flex-1 border-r border-gray-100">
+                                    <i class="ri-user-line text-primary text-lg mb-1"></i>
+                                    <span class="text-xs font-semibold text-gray-600">8 Kişi</span>
+                                </div>
+                                <div class="flex flex-col items-center flex-1 border-r border-gray-100">
+                                    <i class="ri-briefcase-line text-primary text-lg mb-1"></i>
+                                    <span class="text-xs font-semibold text-gray-600">4 Bavul</span>
+                                </div>
+                                <div class="flex flex-col items-center flex-1 border-r border-gray-100">
+                                    <i class="ri-gas-station-line text-primary text-lg mb-1"></i>
+                                    <span class="text-xs font-semibold text-gray-600">Dizel</span>
+                                </div>
+                                <div class="flex flex-col items-center flex-1">
+                                    <i class="ri-steering-2-line text-primary text-lg mb-1"></i>
+                                    <span class="text-xs font-semibold text-gray-600">Otomatik</span>
+                                </div>
+                            </div>
+                            <div class="mt-auto space-y-3">
+                                <div style="background-color: #eff6ff; border: 1px solid #dbeafe; padding: 0.6rem; border-radius: 0.5rem; display: flex; align-items: center; justify-content: space-between;">
+                                    <span style="font-size: 13px; font-weight: 700; color: #1e40af; text-transform: uppercase;">Aylık Kiralama</span>
+                                    <span style="font-size: 17px; font-weight: 800; color: #1e3a8a;">₺21200</span>
+                                </div>
+                                <div class="grid grid-cols-2 gap-3">
+                                    <div class="flex flex-col items-center justify-center p-2 rounded-lg" style="background-color: #dc2626; color: white;">
+                                        <span style="font-size: 10px; font-weight: 700; color: rgba(255,255,255,0.8); text-transform: uppercase;">Günlük</span>
+                                        <span style="font-size: 1.125rem; font-weight: 900; color: #ffffff;">₺1200</span>
+                                    </div>
+                                    <div class="flex flex-col items-center justify-center p-2 rounded-lg" style="background-color: #dc2626; color: white;">
+                                        <span style="font-size: 10px; font-weight: 700; color: rgba(255,255,255,0.8); text-transform: uppercase;">Depozito</span>
+                                        <span style="font-size: 1.125rem; font-weight: 900; color: #ffffff;">₺4.000</span>
+                                    </div>
+                                </div>
+                                <div class="grid grid-cols-2 gap-3 pt-2">
+                                    <a href="https://wa.me/905300405138?text=Merhaba+Ford+Tourneo+Ara%C3%A7+Kiralamak+%C4%B0stiyorum." target="_blank" data-wa-text="Merhaba Ford Tourneo Araç Kiralamak İstiyorum." class="dynamic-whatsapp-link flex items-center justify-center py-2.5 rounded-lg bg-[#25D366] text-white hover:bg-[#128C7E] transition-colors font-bold text-sm shadow-sm">
+                                        <i class="ri-whatsapp-line text-lg mr-1"></i> WhatsApp
+                                    </a>
+                                    <a href="tel:+905300405138" class="dynamic-phone-link flex items-center justify-center py-2.5 rounded-lg bg-black text-white hover:bg-gray-800 transition-all font-bold text-sm shadow-sm">
+                                        <i class="ri-phone-line text-lg mr-1"></i> Bizi Arayın
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                                <div class="car-filter-item" data-fuel="Dizel" data-gear="Otomatik" data-price="1350">
+                    <div class="car-card bg-white rounded-xl shadow-premium overflow-hidden transition-all duration-300 border border-gray-100 hover:border-secondary flex flex-col group h-full">
+                        <a href="https://wa.me/905300405138?text=Merhaba+Ford+Focus+Ara%C3%A7+Kiralamak+%C4%B0stiyorum." class="block relative overflow-hidden" target="_blank">
+                            <div class="relative h-56 overflow-hidden">
+                                <img src="resim/focus.png" alt="Ford Focus" class="w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-110">
+                                <div class="absolute top-3 left-3 bg-secondary text-primary text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider shadow-lg z-10">
+                                    Özel Fırsat                                </div>
+                                <div class="absolute top-3 right-3 bg-green-100 text-green-800 text-[10px] font-bold px-2 py-1 rounded shadow-md z-10 border border-green-200">
+                                    <span class="flex items-center gap-1"><i class="ri-shield-check-fill text-green-600"></i> TAM KASKO</span>
+                                </div>
+                                <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                            </div>
+                        </a>
+                        <div class="p-5 flex flex-col flex-grow">
+                            <div class="mb-3">
+                                <h3 class="text-xl font-bold text-primary mb-1 truncate" title="Ford Focus">Ford Focus</h3>
+                                <span class="inline-flex items-center gap-1 text-xs font-semibold text-gray-500 bg-gray-100 px-2 py-1 rounded">
+                                    <i class="ri-calendar-line"></i> 2025 Model                                </span>
+                            </div>
+                            <div class="flex items-center justify-between border-t border-b border-gray-100 py-3 mb-4">
+                                <div class="flex flex-col items-center flex-1 border-r border-gray-100">
+                                    <i class="ri-user-line text-primary text-lg mb-1"></i>
+                                    <span class="text-xs font-semibold text-gray-600">5 Kişi</span>
+                                </div>
+                                <div class="flex flex-col items-center flex-1 border-r border-gray-100">
+                                    <i class="ri-briefcase-line text-primary text-lg mb-1"></i>
+                                    <span class="text-xs font-semibold text-gray-600">3 Bavul</span>
+                                </div>
+                                <div class="flex flex-col items-center flex-1 border-r border-gray-100">
+                                    <i class="ri-gas-station-line text-primary text-lg mb-1"></i>
+                                    <span class="text-xs font-semibold text-gray-600">Dizel</span>
+                                </div>
+                                <div class="flex flex-col items-center flex-1">
+                                    <i class="ri-steering-2-line text-primary text-lg mb-1"></i>
+                                    <span class="text-xs font-semibold text-gray-600">Otomatik</span>
+                                </div>
+                            </div>
+                            <div class="mt-auto space-y-3">
+                                <div style="background-color: #eff6ff; border: 1px solid #dbeafe; padding: 0.6rem; border-radius: 0.5rem; display: flex; align-items: center; justify-content: space-between;">
+                                    <span style="font-size: 13px; font-weight: 700; color: #1e40af; text-transform: uppercase;">Aylık Kiralama</span>
+                                    <span style="font-size: 17px; font-weight: 800; color: #1e3a8a;">₺27.000</span>
+                                </div>
+                                <div class="grid grid-cols-2 gap-3">
+                                    <div class="flex flex-col items-center justify-center p-2 rounded-lg" style="background-color: #dc2626; color: white;">
+                                        <span style="font-size: 10px; font-weight: 700; color: rgba(255,255,255,0.8); text-transform: uppercase;">Günlük</span>
+                                        <span style="font-size: 1.125rem; font-weight: 900; color: #ffffff;">₺1.350</span>
+                                    </div>
+                                    <div class="flex flex-col items-center justify-center p-2 rounded-lg" style="background-color: #dc2626; color: white;">
+                                        <span style="font-size: 10px; font-weight: 700; color: rgba(255,255,255,0.8); text-transform: uppercase;">Depozito</span>
+                                        <span style="font-size: 1.125rem; font-weight: 900; color: #ffffff;">₺4.000</span>
+                                    </div>
+                                </div>
+                                <div class="grid grid-cols-2 gap-3 pt-2">
+                                    <a href="https://wa.me/905300405138?text=Merhaba+Ford+Focus+Ara%C3%A7+Kiralamak+%C4%B0stiyorum." target="_blank" data-wa-text="Merhaba Ford Focus Araç Kiralamak İstiyorum." class="dynamic-whatsapp-link flex items-center justify-center py-2.5 rounded-lg bg-[#25D366] text-white hover:bg-[#128C7E] transition-colors font-bold text-sm shadow-sm">
+                                        <i class="ri-whatsapp-line text-lg mr-1"></i> WhatsApp
+                                    </a>
+                                    <a href="tel:+905300405138" class="dynamic-phone-link flex items-center justify-center py-2.5 rounded-lg bg-black text-white hover:bg-gray-800 transition-all font-bold text-sm shadow-sm">
+                                        <i class="ri-phone-line text-lg mr-1"></i> Bizi Arayın
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                                <div class="car-filter-item" data-fuel="Dizel" data-gear="Otomatik" data-price="1700">
+                    <div class="car-card bg-white rounded-xl shadow-premium overflow-hidden transition-all duration-300 border border-gray-100 hover:border-secondary flex flex-col group h-full">
+                        <a href="https://wa.me/905300405138?text=Merhaba+Skoda+SuperB+Ara%C3%A7+Kiralamak+%C4%B0stiyorum." class="block relative overflow-hidden" target="_blank">
+                            <div class="relative h-56 overflow-hidden">
+                                <img src="resim/superb.png" alt="Skoda SuperB" class="w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-110">
+                                <div class="absolute top-3 left-3 bg-secondary text-primary text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider shadow-lg z-10">
+                                    Prestij & Güç                                </div>
+                                <div class="absolute top-3 right-3 bg-green-100 text-green-800 text-[10px] font-bold px-2 py-1 rounded shadow-md z-10 border border-green-200">
+                                    <span class="flex items-center gap-1"><i class="ri-shield-check-fill text-green-600"></i> TAM KASKO</span>
+                                </div>
+                                <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                            </div>
+                        </a>
+                        <div class="p-5 flex flex-col flex-grow">
+                            <div class="mb-3">
+                                <h3 class="text-xl font-bold text-primary mb-1 truncate" title="Skoda SuperB">Skoda SuperB</h3>
+                                <span class="inline-flex items-center gap-1 text-xs font-semibold text-gray-500 bg-gray-100 px-2 py-1 rounded">
+                                    <i class="ri-calendar-line"></i> 2025 Model                                </span>
+                            </div>
+                            <div class="flex items-center justify-between border-t border-b border-gray-100 py-3 mb-4">
+                                <div class="flex flex-col items-center flex-1 border-r border-gray-100">
+                                    <i class="ri-user-line text-primary text-lg mb-1"></i>
+                                    <span class="text-xs font-semibold text-gray-600">5 Kişi</span>
+                                </div>
+                                <div class="flex flex-col items-center flex-1 border-r border-gray-100">
+                                    <i class="ri-briefcase-line text-primary text-lg mb-1"></i>
+                                    <span class="text-xs font-semibold text-gray-600">4 Bavul</span>
+                                </div>
+                                <div class="flex flex-col items-center flex-1 border-r border-gray-100">
+                                    <i class="ri-gas-station-line text-primary text-lg mb-1"></i>
+                                    <span class="text-xs font-semibold text-gray-600">Dizel</span>
+                                </div>
+                                <div class="flex flex-col items-center flex-1">
+                                    <i class="ri-steering-2-line text-primary text-lg mb-1"></i>
+                                    <span class="text-xs font-semibold text-gray-600">Otomatik</span>
+                                </div>
+                            </div>
+                            <div class="mt-auto space-y-3">
+                                <div style="background-color: #eff6ff; border: 1px solid #dbeafe; padding: 0.6rem; border-radius: 0.5rem; display: flex; align-items: center; justify-content: space-between;">
+                                    <span style="font-size: 13px; font-weight: 700; color: #1e40af; text-transform: uppercase;">Aylık Kiralama</span>
+                                    <span style="font-size: 17px; font-weight: 800; color: #1e3a8a;">₺36.000</span>
+                                </div>
+                                <div class="grid grid-cols-2 gap-3">
+                                    <div class="flex flex-col items-center justify-center p-2 rounded-lg" style="background-color: #dc2626; color: white;">
+                                        <span style="font-size: 10px; font-weight: 700; color: rgba(255,255,255,0.8); text-transform: uppercase;">Günlük</span>
+                                        <span style="font-size: 1.125rem; font-weight: 900; color: #ffffff;">₺1.700</span>
+                                    </div>
+                                    <div class="flex flex-col items-center justify-center p-2 rounded-lg" style="background-color: #dc2626; color: white;">
+                                        <span style="font-size: 10px; font-weight: 700; color: rgba(255,255,255,0.8); text-transform: uppercase;">Depozito</span>
+                                        <span style="font-size: 1.125rem; font-weight: 900; color: #ffffff;">₺5.000</span>
+                                    </div>
+                                </div>
+                                <div class="grid grid-cols-2 gap-3 pt-2">
+                                    <a href="https://wa.me/905300405138?text=Merhaba+Skoda+SuperB+Ara%C3%A7+Kiralamak+%C4%B0stiyorum." target="_blank" data-wa-text="Merhaba Skoda SuperB Araç Kiralamak İstiyorum." class="dynamic-whatsapp-link flex items-center justify-center py-2.5 rounded-lg bg-[#25D366] text-white hover:bg-[#128C7E] transition-colors font-bold text-sm shadow-sm">
+                                        <i class="ri-whatsapp-line text-lg mr-1"></i> WhatsApp
+                                    </a>
+                                    <a href="tel:+905300405138" class="dynamic-phone-link flex items-center justify-center py-2.5 rounded-lg bg-black text-white hover:bg-gray-800 transition-all font-bold text-sm shadow-sm">
+                                        <i class="ri-phone-line text-lg mr-1"></i> Bizi Arayın
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                                <div class="car-filter-item" data-fuel="Dizel" data-gear="Otomatik" data-price="1350">
+                    <div class="car-card bg-white rounded-xl shadow-premium overflow-hidden transition-all duration-300 border border-gray-100 hover:border-secondary flex flex-col group h-full">
+                        <a href="https://wa.me/905300405138?text=Merhaba+Renault+Megane+Ara%C3%A7+Kiralamak+%C4%B0stiyorum." class="block relative overflow-hidden" target="_blank">
+                            <div class="relative h-56 overflow-hidden">
+                                <img src="resim/megane.png" alt="Renault Megane" class="w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-110">
+                                <div class="absolute top-3 left-3 bg-secondary text-primary text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider shadow-lg z-10">
+                                    Özel Fırsat                                </div>
+                                <div class="absolute top-3 right-3 bg-green-100 text-green-800 text-[10px] font-bold px-2 py-1 rounded shadow-md z-10 border border-green-200">
+                                    <span class="flex items-center gap-1"><i class="ri-shield-check-fill text-green-600"></i> TAM KASKO</span>
+                                </div>
+                                <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                            </div>
+                        </a>
+                        <div class="p-5 flex flex-col flex-grow">
+                            <div class="mb-3">
+                                <h3 class="text-xl font-bold text-primary mb-1 truncate" title="Renault Megane">Renault Megane</h3>
+                                <span class="inline-flex items-center gap-1 text-xs font-semibold text-gray-500 bg-gray-100 px-2 py-1 rounded">
+                                    <i class="ri-calendar-line"></i> 2025 Model                                </span>
+                            </div>
+                            <div class="flex items-center justify-between border-t border-b border-gray-100 py-3 mb-4">
+                                <div class="flex flex-col items-center flex-1 border-r border-gray-100">
+                                    <i class="ri-user-line text-primary text-lg mb-1"></i>
+                                    <span class="text-xs font-semibold text-gray-600">5 Kişi</span>
+                                </div>
+                                <div class="flex flex-col items-center flex-1 border-r border-gray-100">
+                                    <i class="ri-briefcase-line text-primary text-lg mb-1"></i>
+                                    <span class="text-xs font-semibold text-gray-600">3 Bavul</span>
+                                </div>
+                                <div class="flex flex-col items-center flex-1 border-r border-gray-100">
+                                    <i class="ri-gas-station-line text-primary text-lg mb-1"></i>
+                                    <span class="text-xs font-semibold text-gray-600">Dizel</span>
+                                </div>
+                                <div class="flex flex-col items-center flex-1">
+                                    <i class="ri-steering-2-line text-primary text-lg mb-1"></i>
+                                    <span class="text-xs font-semibold text-gray-600">Otomatik</span>
+                                </div>
+                            </div>
+                            <div class="mt-auto space-y-3">
+                                <div style="background-color: #eff6ff; border: 1px solid #dbeafe; padding: 0.6rem; border-radius: 0.5rem; display: flex; align-items: center; justify-content: space-between;">
+                                    <span style="font-size: 13px; font-weight: 700; color: #1e40af; text-transform: uppercase;">Aylık Kiralama</span>
+                                    <span style="font-size: 17px; font-weight: 800; color: #1e3a8a;">₺27.000</span>
+                                </div>
+                                <div class="grid grid-cols-2 gap-3">
+                                    <div class="flex flex-col items-center justify-center p-2 rounded-lg" style="background-color: #dc2626; color: white;">
+                                        <span style="font-size: 10px; font-weight: 700; color: rgba(255,255,255,0.8); text-transform: uppercase;">Günlük</span>
+                                        <span style="font-size: 1.125rem; font-weight: 900; color: #ffffff;">₺1.350</span>
+                                    </div>
+                                    <div class="flex flex-col items-center justify-center p-2 rounded-lg" style="background-color: #dc2626; color: white;">
+                                        <span style="font-size: 10px; font-weight: 700; color: rgba(255,255,255,0.8); text-transform: uppercase;">Depozito</span>
+                                        <span style="font-size: 1.125rem; font-weight: 900; color: #ffffff;">₺4.000</span>
+                                    </div>
+                                </div>
+                                <div class="grid grid-cols-2 gap-3 pt-2">
+                                    <a href="https://wa.me/905300405138?text=Merhaba+Renault+Megane+Ara%C3%A7+Kiralamak+%C4%B0stiyorum." target="_blank" data-wa-text="Merhaba Renault Megane Araç Kiralamak İstiyorum." class="dynamic-whatsapp-link flex items-center justify-center py-2.5 rounded-lg bg-[#25D366] text-white hover:bg-[#128C7E] transition-colors font-bold text-sm shadow-sm">
+                                        <i class="ri-whatsapp-line text-lg mr-1"></i> WhatsApp
+                                    </a>
+                                    <a href="tel:+905300405138" class="dynamic-phone-link flex items-center justify-center py-2.5 rounded-lg bg-black text-white hover:bg-gray-800 transition-all font-bold text-sm shadow-sm">
+                                        <i class="ri-phone-line text-lg mr-1"></i> Bizi Arayın
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                                <div class="car-filter-item" data-fuel="Hibrit" data-gear="Otomatik" data-price="1350">
+                    <div class="car-card bg-white rounded-xl shadow-premium overflow-hidden transition-all duration-300 border border-gray-100 hover:border-secondary flex flex-col group h-full">
+                        <a href="https://wa.me/905300405138?text=Merhaba+Toyota+Corolla+Ara%C3%A7+Kiralamak+%C4%B0stiyorum." class="block relative overflow-hidden" target="_blank">
+                            <div class="relative h-56 overflow-hidden">
+                                <img src="resim/corolla.png" alt="Toyota Corolla" class="w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-110">
+                                <div class="absolute top-3 left-3 bg-secondary text-primary text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider shadow-lg z-10">
+                                    Özel Fırsat                                </div>
+                                <div class="absolute top-3 right-3 bg-green-100 text-green-800 text-[10px] font-bold px-2 py-1 rounded shadow-md z-10 border border-green-200">
+                                    <span class="flex items-center gap-1"><i class="ri-shield-check-fill text-green-600"></i> TAM KASKO</span>
+                                </div>
+                                <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                            </div>
+                        </a>
+                        <div class="p-5 flex flex-col flex-grow">
+                            <div class="mb-3">
+                                <h3 class="text-xl font-bold text-primary mb-1 truncate" title="Toyota Corolla">Toyota Corolla</h3>
+                                <span class="inline-flex items-center gap-1 text-xs font-semibold text-gray-500 bg-gray-100 px-2 py-1 rounded">
+                                    <i class="ri-calendar-line"></i> 2025 Model                                </span>
+                            </div>
+                            <div class="flex items-center justify-between border-t border-b border-gray-100 py-3 mb-4">
+                                <div class="flex flex-col items-center flex-1 border-r border-gray-100">
+                                    <i class="ri-user-line text-primary text-lg mb-1"></i>
+                                    <span class="text-xs font-semibold text-gray-600">5 Kişi</span>
+                                </div>
+                                <div class="flex flex-col items-center flex-1 border-r border-gray-100">
+                                    <i class="ri-briefcase-line text-primary text-lg mb-1"></i>
+                                    <span class="text-xs font-semibold text-gray-600">3 Bavul</span>
+                                </div>
+                                <div class="flex flex-col items-center flex-1 border-r border-gray-100">
+                                    <i class="ri-gas-station-line text-primary text-lg mb-1"></i>
+                                    <span class="text-xs font-semibold text-gray-600">Hibrit</span>
+                                </div>
+                                <div class="flex flex-col items-center flex-1">
+                                    <i class="ri-steering-2-line text-primary text-lg mb-1"></i>
+                                    <span class="text-xs font-semibold text-gray-600">Otomatik</span>
+                                </div>
+                            </div>
+                            <div class="mt-auto space-y-3">
+                                <div style="background-color: #eff6ff; border: 1px solid #dbeafe; padding: 0.6rem; border-radius: 0.5rem; display: flex; align-items: center; justify-content: space-between;">
+                                    <span style="font-size: 13px; font-weight: 700; color: #1e40af; text-transform: uppercase;">Aylık Kiralama</span>
+                                    <span style="font-size: 17px; font-weight: 800; color: #1e3a8a;">₺27.000</span>
+                                </div>
+                                <div class="grid grid-cols-2 gap-3">
+                                    <div class="flex flex-col items-center justify-center p-2 rounded-lg" style="background-color: #dc2626; color: white;">
+                                        <span style="font-size: 10px; font-weight: 700; color: rgba(255,255,255,0.8); text-transform: uppercase;">Günlük</span>
+                                        <span style="font-size: 1.125rem; font-weight: 900; color: #ffffff;">₺1.350</span>
+                                    </div>
+                                    <div class="flex flex-col items-center justify-center p-2 rounded-lg" style="background-color: #dc2626; color: white;">
+                                        <span style="font-size: 10px; font-weight: 700; color: rgba(255,255,255,0.8); text-transform: uppercase;">Depozito</span>
+                                        <span style="font-size: 1.125rem; font-weight: 900; color: #ffffff;">₺4.000</span>
+                                    </div>
+                                </div>
+                                <div class="grid grid-cols-2 gap-3 pt-2">
+                                    <a href="https://wa.me/905300405138?text=Merhaba+Toyota+Corolla+Ara%C3%A7+Kiralamak+%C4%B0stiyorum." target="_blank" data-wa-text="Merhaba Toyota Corolla Araç Kiralamak İstiyorum." class="dynamic-whatsapp-link flex items-center justify-center py-2.5 rounded-lg bg-[#25D366] text-white hover:bg-[#128C7E] transition-colors font-bold text-sm shadow-sm">
+                                        <i class="ri-whatsapp-line text-lg mr-1"></i> WhatsApp
+                                    </a>
+                                    <a href="tel:+905300405138" class="dynamic-phone-link flex items-center justify-center py-2.5 rounded-lg bg-black text-white hover:bg-gray-800 transition-all font-bold text-sm shadow-sm">
+                                        <i class="ri-phone-line text-lg mr-1"></i> Bizi Arayın
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                                <div class="car-filter-item" data-fuel="Benzin" data-gear="Otomatik" data-price="1350">
+                    <div class="car-card bg-white rounded-xl shadow-premium overflow-hidden transition-all duration-300 border border-gray-100 hover:border-secondary flex flex-col group h-full">
+                        <a href="https://wa.me/905300405138?text=Merhaba+Honda+Civic+Ara%C3%A7+Kiralamak+%C4%B0stiyorum." class="block relative overflow-hidden" target="_blank">
+                            <div class="relative h-56 overflow-hidden">
+                                <img src="resim/civic.png" alt="Honda Civic" class="w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-110">
+                                <div class="absolute top-3 left-3 bg-secondary text-primary text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider shadow-lg z-10">
+                                    Özel Fırsat                                </div>
+                                <div class="absolute top-3 right-3 bg-green-100 text-green-800 text-[10px] font-bold px-2 py-1 rounded shadow-md z-10 border border-green-200">
+                                    <span class="flex items-center gap-1"><i class="ri-shield-check-fill text-green-600"></i> TAM KASKO</span>
+                                </div>
+                                <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                            </div>
+                        </a>
+                        <div class="p-5 flex flex-col flex-grow">
+                            <div class="mb-3">
+                                <h3 class="text-xl font-bold text-primary mb-1 truncate" title="Honda Civic">Honda Civic</h3>
+                                <span class="inline-flex items-center gap-1 text-xs font-semibold text-gray-500 bg-gray-100 px-2 py-1 rounded">
+                                    <i class="ri-calendar-line"></i> 2025 Model                                </span>
+                            </div>
+                            <div class="flex items-center justify-between border-t border-b border-gray-100 py-3 mb-4">
+                                <div class="flex flex-col items-center flex-1 border-r border-gray-100">
+                                    <i class="ri-user-line text-primary text-lg mb-1"></i>
+                                    <span class="text-xs font-semibold text-gray-600">5 Kişi</span>
+                                </div>
+                                <div class="flex flex-col items-center flex-1 border-r border-gray-100">
+                                    <i class="ri-briefcase-line text-primary text-lg mb-1"></i>
+                                    <span class="text-xs font-semibold text-gray-600">3 Bavul</span>
+                                </div>
+                                <div class="flex flex-col items-center flex-1 border-r border-gray-100">
+                                    <i class="ri-gas-station-line text-primary text-lg mb-1"></i>
+                                    <span class="text-xs font-semibold text-gray-600">Benzin</span>
+                                </div>
+                                <div class="flex flex-col items-center flex-1">
+                                    <i class="ri-steering-2-line text-primary text-lg mb-1"></i>
+                                    <span class="text-xs font-semibold text-gray-600">Otomatik</span>
+                                </div>
+                            </div>
+                            <div class="mt-auto space-y-3">
+                                <div style="background-color: #eff6ff; border: 1px solid #dbeafe; padding: 0.6rem; border-radius: 0.5rem; display: flex; align-items: center; justify-content: space-between;">
+                                    <span style="font-size: 13px; font-weight: 700; color: #1e40af; text-transform: uppercase;">Aylık Kiralama</span>
+                                    <span style="font-size: 17px; font-weight: 800; color: #1e3a8a;">₺27.000</span>
+                                </div>
+                                <div class="grid grid-cols-2 gap-3">
+                                    <div class="flex flex-col items-center justify-center p-2 rounded-lg" style="background-color: #dc2626; color: white;">
+                                        <span style="font-size: 10px; font-weight: 700; color: rgba(255,255,255,0.8); text-transform: uppercase;">Günlük</span>
+                                        <span style="font-size: 1.125rem; font-weight: 900; color: #ffffff;">₺1.350</span>
+                                    </div>
+                                    <div class="flex flex-col items-center justify-center p-2 rounded-lg" style="background-color: #dc2626; color: white;">
+                                        <span style="font-size: 10px; font-weight: 700; color: rgba(255,255,255,0.8); text-transform: uppercase;">Depozito</span>
+                                        <span style="font-size: 1.125rem; font-weight: 900; color: #ffffff;">₺4.000</span>
+                                    </div>
+                                </div>
+                                <div class="grid grid-cols-2 gap-3 pt-2">
+                                    <a href="https://wa.me/905300405138?text=Merhaba+Honda+Civic+Ara%C3%A7+Kiralamak+%C4%B0stiyorum." target="_blank" data-wa-text="Merhaba Honda Civic Araç Kiralamak İstiyorum." class="dynamic-whatsapp-link flex items-center justify-center py-2.5 rounded-lg bg-[#25D366] text-white hover:bg-[#128C7E] transition-colors font-bold text-sm shadow-sm">
+                                        <i class="ri-whatsapp-line text-lg mr-1"></i> WhatsApp
+                                    </a>
+                                    <a href="tel:+905300405138" class="dynamic-phone-link flex items-center justify-center py-2.5 rounded-lg bg-black text-white hover:bg-gray-800 transition-all font-bold text-sm shadow-sm">
+                                        <i class="ri-phone-line text-lg mr-1"></i> Bizi Arayın
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                                <div class="car-filter-item" data-fuel="Benzin" data-gear="Otomatik" data-price="1500">
+                    <div class="car-card bg-white rounded-xl shadow-premium overflow-hidden transition-all duration-300 border border-gray-100 hover:border-secondary flex flex-col group h-full">
+                        <a href="https://wa.me/905300405138?text=Merhaba+Peugeot+2008+Ara%C3%A7+Kiralamak+%C4%B0stiyorum." class="block relative overflow-hidden" target="_blank">
+                            <div class="relative h-56 overflow-hidden">
+                                <img src="resim/2008.png" alt="Peugeot 2008" class="w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-110">
+                                <div class="absolute top-3 left-3 bg-secondary text-primary text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider shadow-lg z-10">
+                                    Özel Fırsat                                </div>
+                                <div class="absolute top-3 right-3 bg-green-100 text-green-800 text-[10px] font-bold px-2 py-1 rounded shadow-md z-10 border border-green-200">
+                                    <span class="flex items-center gap-1"><i class="ri-shield-check-fill text-green-600"></i> TAM KASKO</span>
+                                </div>
+                                <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                            </div>
+                        </a>
+                        <div class="p-5 flex flex-col flex-grow">
+                            <div class="mb-3">
+                                <h3 class="text-xl font-bold text-primary mb-1 truncate" title="Peugeot 2008">Peugeot 2008</h3>
+                                <span class="inline-flex items-center gap-1 text-xs font-semibold text-gray-500 bg-gray-100 px-2 py-1 rounded">
+                                    <i class="ri-calendar-line"></i> 2025 Model                                </span>
+                            </div>
+                            <div class="flex items-center justify-between border-t border-b border-gray-100 py-3 mb-4">
+                                <div class="flex flex-col items-center flex-1 border-r border-gray-100">
+                                    <i class="ri-user-line text-primary text-lg mb-1"></i>
+                                    <span class="text-xs font-semibold text-gray-600">5 Kişi</span>
+                                </div>
+                                <div class="flex flex-col items-center flex-1 border-r border-gray-100">
+                                    <i class="ri-briefcase-line text-primary text-lg mb-1"></i>
+                                    <span class="text-xs font-semibold text-gray-600">3 Bavul</span>
+                                </div>
+                                <div class="flex flex-col items-center flex-1 border-r border-gray-100">
+                                    <i class="ri-gas-station-line text-primary text-lg mb-1"></i>
+                                    <span class="text-xs font-semibold text-gray-600">Benzin</span>
+                                </div>
+                                <div class="flex flex-col items-center flex-1">
+                                    <i class="ri-steering-2-line text-primary text-lg mb-1"></i>
+                                    <span class="text-xs font-semibold text-gray-600">Otomatik</span>
+                                </div>
+                            </div>
+                            <div class="mt-auto space-y-3">
+                                <div style="background-color: #eff6ff; border: 1px solid #dbeafe; padding: 0.6rem; border-radius: 0.5rem; display: flex; align-items: center; justify-content: space-between;">
+                                    <span style="font-size: 13px; font-weight: 700; color: #1e40af; text-transform: uppercase;">Aylık Kiralama</span>
+                                    <span style="font-size: 17px; font-weight: 800; color: #1e3a8a;">₺30.000</span>
+                                </div>
+                                <div class="grid grid-cols-2 gap-3">
+                                    <div class="flex flex-col items-center justify-center p-2 rounded-lg" style="background-color: #dc2626; color: white;">
+                                        <span style="font-size: 10px; font-weight: 700; color: rgba(255,255,255,0.8); text-transform: uppercase;">Günlük</span>
+                                        <span style="font-size: 1.125rem; font-weight: 900; color: #ffffff;">₺1.500</span>
+                                    </div>
+                                    <div class="flex flex-col items-center justify-center p-2 rounded-lg" style="background-color: #dc2626; color: white;">
+                                        <span style="font-size: 10px; font-weight: 700; color: rgba(255,255,255,0.8); text-transform: uppercase;">Depozito</span>
+                                        <span style="font-size: 1.125rem; font-weight: 900; color: #ffffff;">₺4.000</span>
+                                    </div>
+                                </div>
+                                <div class="grid grid-cols-2 gap-3 pt-2">
+                                    <a href="https://wa.me/905300405138?text=Merhaba+Peugeot+2008+Ara%C3%A7+Kiralamak+%C4%B0stiyorum." target="_blank" data-wa-text="Merhaba Peugeot 2008 Araç Kiralamak İstiyorum." class="dynamic-whatsapp-link flex items-center justify-center py-2.5 rounded-lg bg-[#25D366] text-white hover:bg-[#128C7E] transition-colors font-bold text-sm shadow-sm">
+                                        <i class="ri-whatsapp-line text-lg mr-1"></i> WhatsApp
+                                    </a>
+                                    <a href="tel:+905300405138" class="dynamic-phone-link flex items-center justify-center py-2.5 rounded-lg bg-black text-white hover:bg-gray-800 transition-all font-bold text-sm shadow-sm">
+                                        <i class="ri-phone-line text-lg mr-1"></i> Bizi Arayın
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                                <div class="car-filter-item" data-fuel="Dizel" data-gear="Otomatik" data-price="1800">
+                    <div class="car-card bg-white rounded-xl shadow-premium overflow-hidden transition-all duration-300 border border-gray-100 hover:border-secondary flex flex-col group h-full">
+                        <a href="https://wa.me/905300405138?text=Merhaba+Peugeot+3008+Ara%C3%A7+Kiralamak+%C4%B0stiyorum." class="block relative overflow-hidden" target="_blank">
+                            <div class="relative h-56 overflow-hidden">
+                                <img src="resim/3008.png" alt="Peugeot 3008" class="w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-110">
+                                <div class="absolute top-3 left-3 bg-secondary text-primary text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider shadow-lg z-10">
+                                    Aile & SUV                                </div>
+                                <div class="absolute top-3 right-3 bg-green-100 text-green-800 text-[10px] font-bold px-2 py-1 rounded shadow-md z-10 border border-green-200">
+                                    <span class="flex items-center gap-1"><i class="ri-shield-check-fill text-green-600"></i> TAM KASKO</span>
+                                </div>
+                                <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                            </div>
+                        </a>
+                        <div class="p-5 flex flex-col flex-grow">
+                            <div class="mb-3">
+                                <h3 class="text-xl font-bold text-primary mb-1 truncate" title="Peugeot 3008">Peugeot 3008</h3>
+                                <span class="inline-flex items-center gap-1 text-xs font-semibold text-gray-500 bg-gray-100 px-2 py-1 rounded">
+                                    <i class="ri-calendar-line"></i> 2025 Model                                </span>
+                            </div>
+                            <div class="flex items-center justify-between border-t border-b border-gray-100 py-3 mb-4">
+                                <div class="flex flex-col items-center flex-1 border-r border-gray-100">
+                                    <i class="ri-user-line text-primary text-lg mb-1"></i>
+                                    <span class="text-xs font-semibold text-gray-600">5 Kişi</span>
+                                </div>
+                                <div class="flex flex-col items-center flex-1 border-r border-gray-100">
+                                    <i class="ri-briefcase-line text-primary text-lg mb-1"></i>
+                                    <span class="text-xs font-semibold text-gray-600">4 Bavul</span>
+                                </div>
+                                <div class="flex flex-col items-center flex-1 border-r border-gray-100">
+                                    <i class="ri-gas-station-line text-primary text-lg mb-1"></i>
+                                    <span class="text-xs font-semibold text-gray-600">Dizel</span>
+                                </div>
+                                <div class="flex flex-col items-center flex-1">
+                                    <i class="ri-steering-2-line text-primary text-lg mb-1"></i>
+                                    <span class="text-xs font-semibold text-gray-600">Otomatik</span>
+                                </div>
+                            </div>
+                            <div class="mt-auto space-y-3">
+                                <div style="background-color: #eff6ff; border: 1px solid #dbeafe; padding: 0.6rem; border-radius: 0.5rem; display: flex; align-items: center; justify-content: space-between;">
+                                    <span style="font-size: 13px; font-weight: 700; color: #1e40af; text-transform: uppercase;">Aylık Kiralama</span>
+                                    <span style="font-size: 17px; font-weight: 800; color: #1e3a8a;">₺36.000</span>
+                                </div>
+                                <div class="grid grid-cols-2 gap-3">
+                                    <div class="flex flex-col items-center justify-center p-2 rounded-lg" style="background-color: #dc2626; color: white;">
+                                        <span style="font-size: 10px; font-weight: 700; color: rgba(255,255,255,0.8); text-transform: uppercase;">Günlük</span>
+                                        <span style="font-size: 1.125rem; font-weight: 900; color: #ffffff;">₺1.800</span>
+                                    </div>
+                                    <div class="flex flex-col items-center justify-center p-2 rounded-lg" style="background-color: #dc2626; color: white;">
+                                        <span style="font-size: 10px; font-weight: 700; color: rgba(255,255,255,0.8); text-transform: uppercase;">Depozito</span>
+                                        <span style="font-size: 1.125rem; font-weight: 900; color: #ffffff;">₺5.000</span>
+                                    </div>
+                                </div>
+                                <div class="grid grid-cols-2 gap-3 pt-2">
+                                    <a href="https://wa.me/905300405138?text=Merhaba+Peugeot+3008+Ara%C3%A7+Kiralamak+%C4%B0stiyorum." target="_blank" data-wa-text="Merhaba Peugeot 3008 Araç Kiralamak İstiyorum." class="dynamic-whatsapp-link flex items-center justify-center py-2.5 rounded-lg bg-[#25D366] text-white hover:bg-[#128C7E] transition-colors font-bold text-sm shadow-sm">
+                                        <i class="ri-whatsapp-line text-lg mr-1"></i> WhatsApp
+                                    </a>
+                                    <a href="tel:+905300405138" class="dynamic-phone-link flex items-center justify-center py-2.5 rounded-lg bg-black text-white hover:bg-gray-800 transition-all font-bold text-sm shadow-sm">
+                                        <i class="ri-phone-line text-lg mr-1"></i> Bizi Arayın
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                                <div class="car-filter-item" data-fuel="Dizel" data-gear="Otomatik" data-price="1800">
+                    <div class="car-card bg-white rounded-xl shadow-premium overflow-hidden transition-all duration-300 border border-gray-100 hover:border-secondary flex flex-col group h-full">
+                        <a href="https://wa.me/905300405138?text=Merhaba+Renault+Duster+Ara%C3%A7+Kiralamak+%C4%B0stiyorum." class="block relative overflow-hidden" target="_blank">
+                            <div class="relative h-56 overflow-hidden">
+                                <img src="resim/duster.png" alt="Renault Duster" class="w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-110">
+                                <div class="absolute top-3 left-3 bg-secondary text-primary text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider shadow-lg z-10">
+                                    Aile & SUV                                </div>
+                                <div class="absolute top-3 right-3 bg-green-100 text-green-800 text-[10px] font-bold px-2 py-1 rounded shadow-md z-10 border border-green-200">
+                                    <span class="flex items-center gap-1"><i class="ri-shield-check-fill text-green-600"></i> TAM KASKO</span>
+                                </div>
+                                <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                            </div>
+                        </a>
+                        <div class="p-5 flex flex-col flex-grow">
+                            <div class="mb-3">
+                                <h3 class="text-xl font-bold text-primary mb-1 truncate" title="Renault Duster">Renault Duster</h3>
+                                <span class="inline-flex items-center gap-1 text-xs font-semibold text-gray-500 bg-gray-100 px-2 py-1 rounded">
+                                    <i class="ri-calendar-line"></i> 2025 Model                                </span>
+                            </div>
+                            <div class="flex items-center justify-between border-t border-b border-gray-100 py-3 mb-4">
+                                <div class="flex flex-col items-center flex-1 border-r border-gray-100">
+                                    <i class="ri-user-line text-primary text-lg mb-1"></i>
+                                    <span class="text-xs font-semibold text-gray-600">5 Kişi</span>
+                                </div>
+                                <div class="flex flex-col items-center flex-1 border-r border-gray-100">
+                                    <i class="ri-briefcase-line text-primary text-lg mb-1"></i>
+                                    <span class="text-xs font-semibold text-gray-600">4 Bavul</span>
+                                </div>
+                                <div class="flex flex-col items-center flex-1 border-r border-gray-100">
+                                    <i class="ri-gas-station-line text-primary text-lg mb-1"></i>
+                                    <span class="text-xs font-semibold text-gray-600">Dizel</span>
+                                </div>
+                                <div class="flex flex-col items-center flex-1">
+                                    <i class="ri-steering-2-line text-primary text-lg mb-1"></i>
+                                    <span class="text-xs font-semibold text-gray-600">Otomatik</span>
+                                </div>
+                            </div>
+                            <div class="mt-auto space-y-3">
+                                <div style="background-color: #eff6ff; border: 1px solid #dbeafe; padding: 0.6rem; border-radius: 0.5rem; display: flex; align-items: center; justify-content: space-between;">
+                                    <span style="font-size: 13px; font-weight: 700; color: #1e40af; text-transform: uppercase;">Aylık Kiralama</span>
+                                    <span style="font-size: 17px; font-weight: 800; color: #1e3a8a;">₺36.000</span>
+                                </div>
+                                <div class="grid grid-cols-2 gap-3">
+                                    <div class="flex flex-col items-center justify-center p-2 rounded-lg" style="background-color: #dc2626; color: white;">
+                                        <span style="font-size: 10px; font-weight: 700; color: rgba(255,255,255,0.8); text-transform: uppercase;">Günlük</span>
+                                        <span style="font-size: 1.125rem; font-weight: 900; color: #ffffff;">₺1.800</span>
+                                    </div>
+                                    <div class="flex flex-col items-center justify-center p-2 rounded-lg" style="background-color: #dc2626; color: white;">
+                                        <span style="font-size: 10px; font-weight: 700; color: rgba(255,255,255,0.8); text-transform: uppercase;">Depozito</span>
+                                        <span style="font-size: 1.125rem; font-weight: 900; color: #ffffff;">₺5.000</span>
+                                    </div>
+                                </div>
+                                <div class="grid grid-cols-2 gap-3 pt-2">
+                                    <a href="https://wa.me/905300405138?text=Merhaba+Renault+Duster+Ara%C3%A7+Kiralamak+%C4%B0stiyorum." target="_blank" data-wa-text="Merhaba Renault Duster Araç Kiralamak İstiyorum." class="dynamic-whatsapp-link flex items-center justify-center py-2.5 rounded-lg bg-[#25D366] text-white hover:bg-[#128C7E] transition-colors font-bold text-sm shadow-sm">
+                                        <i class="ri-whatsapp-line text-lg mr-1"></i> WhatsApp
+                                    </a>
+                                    <a href="tel:+905300405138" class="dynamic-phone-link flex items-center justify-center py-2.5 rounded-lg bg-black text-white hover:bg-gray-800 transition-all font-bold text-sm shadow-sm">
+                                        <i class="ri-phone-line text-lg mr-1"></i> Bizi Arayın
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                                <div class="car-filter-item" data-fuel="Dizel" data-gear="Otomatik" data-price="1800">
+                    <div class="car-card bg-white rounded-xl shadow-premium overflow-hidden transition-all duration-300 border border-gray-100 hover:border-secondary flex flex-col group h-full">
+                        <a href="https://wa.me/905300405138?text=Merhaba+Skoda+Kodiaq+Ara%C3%A7+Kiralamak+%C4%B0stiyorum." class="block relative overflow-hidden" target="_blank">
+                            <div class="relative h-56 overflow-hidden">
+                                <img src="resim/kodiaq.png" alt="Skoda Kodiaq" class="w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-110">
+                                <div class="absolute top-3 left-3 bg-secondary text-primary text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider shadow-lg z-10">
+                                    Özel Fırsat                                </div>
+                                <div class="absolute top-3 right-3 bg-green-100 text-green-800 text-[10px] font-bold px-2 py-1 rounded shadow-md z-10 border border-green-200">
+                                    <span class="flex items-center gap-1"><i class="ri-shield-check-fill text-green-600"></i> TAM KASKO</span>
+                                </div>
+                                <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                            </div>
+                        </a>
+                        <div class="p-5 flex flex-col flex-grow">
+                            <div class="mb-3">
+                                <h3 class="text-xl font-bold text-primary mb-1 truncate" title="Skoda Kodiaq">Skoda Kodiaq</h3>
+                                <span class="inline-flex items-center gap-1 text-xs font-semibold text-gray-500 bg-gray-100 px-2 py-1 rounded">
+                                    <i class="ri-calendar-line"></i> 2025 Model                                </span>
+                            </div>
+                            <div class="flex items-center justify-between border-t border-b border-gray-100 py-3 mb-4">
+                                <div class="flex flex-col items-center flex-1 border-r border-gray-100">
+                                    <i class="ri-user-line text-primary text-lg mb-1"></i>
+                                    <span class="text-xs font-semibold text-gray-600">7 Kişi</span>
+                                </div>
+                                <div class="flex flex-col items-center flex-1 border-r border-gray-100">
+                                    <i class="ri-briefcase-line text-primary text-lg mb-1"></i>
+                                    <span class="text-xs font-semibold text-gray-600">4 Bavul</span>
+                                </div>
+                                <div class="flex flex-col items-center flex-1 border-r border-gray-100">
+                                    <i class="ri-gas-station-line text-primary text-lg mb-1"></i>
+                                    <span class="text-xs font-semibold text-gray-600">Dizel</span>
+                                </div>
+                                <div class="flex flex-col items-center flex-1">
+                                    <i class="ri-steering-2-line text-primary text-lg mb-1"></i>
+                                    <span class="text-xs font-semibold text-gray-600">Otomatik</span>
+                                </div>
+                            </div>
+                            <div class="mt-auto space-y-3">
+                                <div style="background-color: #eff6ff; border: 1px solid #dbeafe; padding: 0.6rem; border-radius: 0.5rem; display: flex; align-items: center; justify-content: space-between;">
+                                    <span style="font-size: 13px; font-weight: 700; color: #1e40af; text-transform: uppercase;">Aylık Kiralama</span>
+                                    <span style="font-size: 17px; font-weight: 800; color: #1e3a8a;">₺36.000</span>
+                                </div>
+                                <div class="grid grid-cols-2 gap-3">
+                                    <div class="flex flex-col items-center justify-center p-2 rounded-lg" style="background-color: #dc2626; color: white;">
+                                        <span style="font-size: 10px; font-weight: 700; color: rgba(255,255,255,0.8); text-transform: uppercase;">Günlük</span>
+                                        <span style="font-size: 1.125rem; font-weight: 900; color: #ffffff;">₺1.800</span>
+                                    </div>
+                                    <div class="flex flex-col items-center justify-center p-2 rounded-lg" style="background-color: #dc2626; color: white;">
+                                        <span style="font-size: 10px; font-weight: 700; color: rgba(255,255,255,0.8); text-transform: uppercase;">Depozito</span>
+                                        <span style="font-size: 1.125rem; font-weight: 900; color: #ffffff;">₺5.000</span>
+                                    </div>
+                                </div>
+                                <div class="grid grid-cols-2 gap-3 pt-2">
+                                    <a href="https://wa.me/905300405138?text=Merhaba+Skoda+Kodiaq+Ara%C3%A7+Kiralamak+%C4%B0stiyorum." target="_blank" data-wa-text="Merhaba Skoda Kodiaq Araç Kiralamak İstiyorum." class="dynamic-whatsapp-link flex items-center justify-center py-2.5 rounded-lg bg-[#25D366] text-white hover:bg-[#128C7E] transition-colors font-bold text-sm shadow-sm">
+                                        <i class="ri-whatsapp-line text-lg mr-1"></i> WhatsApp
+                                    </a>
+                                    <a href="tel:+905300405138" class="dynamic-phone-link flex items-center justify-center py-2.5 rounded-lg bg-black text-white hover:bg-gray-800 transition-all font-bold text-sm shadow-sm">
+                                        <i class="ri-phone-line text-lg mr-1"></i> Bizi Arayın
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                                <div class="car-filter-item" data-fuel="Dizel" data-gear="Otomatik" data-price="2250">
+                    <div class="car-card bg-white rounded-xl shadow-premium overflow-hidden transition-all duration-300 border border-gray-100 hover:border-secondary flex flex-col group h-full">
+                        <a href="https://wa.me/905300405138?text=Merhaba+BMW+X1+Ara%C3%A7+Kiralamak+%C4%B0stiyorum." class="block relative overflow-hidden" target="_blank">
+                            <div class="relative h-56 overflow-hidden">
+                                <img src="resim/x1.png" alt="BMW X1" class="w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-110">
+                                <div class="absolute top-3 left-3 bg-secondary text-primary text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider shadow-lg z-10">
+                                    Prestij & Güç                                </div>
+                                <div class="absolute top-3 right-3 bg-green-100 text-green-800 text-[10px] font-bold px-2 py-1 rounded shadow-md z-10 border border-green-200">
+                                    <span class="flex items-center gap-1"><i class="ri-shield-check-fill text-green-600"></i> TAM KASKO</span>
+                                </div>
+                                <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                            </div>
+                        </a>
+                        <div class="p-5 flex flex-col flex-grow">
+                            <div class="mb-3">
+                                <h3 class="text-xl font-bold text-primary mb-1 truncate" title="BMW X1">BMW X1</h3>
+                                <span class="inline-flex items-center gap-1 text-xs font-semibold text-gray-500 bg-gray-100 px-2 py-1 rounded">
+                                    <i class="ri-calendar-line"></i> 2025 Model                                </span>
+                            </div>
+                            <div class="flex items-center justify-between border-t border-b border-gray-100 py-3 mb-4">
+                                <div class="flex flex-col items-center flex-1 border-r border-gray-100">
+                                    <i class="ri-user-line text-primary text-lg mb-1"></i>
+                                    <span class="text-xs font-semibold text-gray-600">5 Kişi</span>
+                                </div>
+                                <div class="flex flex-col items-center flex-1 border-r border-gray-100">
+                                    <i class="ri-briefcase-line text-primary text-lg mb-1"></i>
+                                    <span class="text-xs font-semibold text-gray-600">3 Bavul</span>
+                                </div>
+                                <div class="flex flex-col items-center flex-1 border-r border-gray-100">
+                                    <i class="ri-gas-station-line text-primary text-lg mb-1"></i>
+                                    <span class="text-xs font-semibold text-gray-600">Dizel</span>
+                                </div>
+                                <div class="flex flex-col items-center flex-1">
+                                    <i class="ri-steering-2-line text-primary text-lg mb-1"></i>
+                                    <span class="text-xs font-semibold text-gray-600">Otomatik</span>
+                                </div>
+                            </div>
+                            <div class="mt-auto space-y-3">
+                                <div style="background-color: #eff6ff; border: 1px solid #dbeafe; padding: 0.6rem; border-radius: 0.5rem; display: flex; align-items: center; justify-content: space-between;">
+                                    <span style="font-size: 13px; font-weight: 700; color: #1e40af; text-transform: uppercase;">Aylık Kiralama</span>
+                                    <span style="font-size: 17px; font-weight: 800; color: #1e3a8a;">₺45.000</span>
+                                </div>
+                                <div class="grid grid-cols-2 gap-3">
+                                    <div class="flex flex-col items-center justify-center p-2 rounded-lg" style="background-color: #dc2626; color: white;">
+                                        <span style="font-size: 10px; font-weight: 700; color: rgba(255,255,255,0.8); text-transform: uppercase;">Günlük</span>
+                                        <span style="font-size: 1.125rem; font-weight: 900; color: #ffffff;">₺2.250</span>
+                                    </div>
+                                    <div class="flex flex-col items-center justify-center p-2 rounded-lg" style="background-color: #dc2626; color: white;">
+                                        <span style="font-size: 10px; font-weight: 700; color: rgba(255,255,255,0.8); text-transform: uppercase;">Depozito</span>
+                                        <span style="font-size: 1.125rem; font-weight: 900; color: #ffffff;">₺5.000</span>
+                                    </div>
+                                </div>
+                                <div class="grid grid-cols-2 gap-3 pt-2">
+                                    <a href="https://wa.me/905300405138?text=Merhaba+BMW+X1+Ara%C3%A7+Kiralamak+%C4%B0stiyorum." target="_blank" data-wa-text="Merhaba BMW X1 Araç Kiralamak İstiyorum." class="dynamic-whatsapp-link flex items-center justify-center py-2.5 rounded-lg bg-[#25D366] text-white hover:bg-[#128C7E] transition-colors font-bold text-sm shadow-sm">
+                                        <i class="ri-whatsapp-line text-lg mr-1"></i> WhatsApp
+                                    </a>
+                                    <a href="tel:+905300405138" class="dynamic-phone-link flex items-center justify-center py-2.5 rounded-lg bg-black text-white hover:bg-gray-800 transition-all font-bold text-sm shadow-sm">
+                                        <i class="ri-phone-line text-lg mr-1"></i> Bizi Arayın
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                                <div class="car-filter-item" data-fuel="Dizel" data-gear="Otomatik" data-price="1750">
+                    <div class="car-card bg-white rounded-xl shadow-premium overflow-hidden transition-all duration-300 border border-gray-100 hover:border-secondary flex flex-col group h-full">
+                        <a href="https://wa.me/905300405138?text=Merhaba+Audi+A3+Ara%C3%A7+Kiralamak+%C4%B0stiyorum." class="block relative overflow-hidden" target="_blank">
+                            <div class="relative h-56 overflow-hidden">
+                                <img src="resim/a3.png" alt="Audi A3" class="w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-110">
+                                <div class="absolute top-3 left-3 bg-secondary text-primary text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider shadow-lg z-10">
+                                    Prestij & Güç                                </div>
+                                <div class="absolute top-3 right-3 bg-green-100 text-green-800 text-[10px] font-bold px-2 py-1 rounded shadow-md z-10 border border-green-200">
+                                    <span class="flex items-center gap-1"><i class="ri-shield-check-fill text-green-600"></i> TAM KASKO</span>
+                                </div>
+                                <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                            </div>
+                        </a>
+                        <div class="p-5 flex flex-col flex-grow">
+                            <div class="mb-3">
+                                <h3 class="text-xl font-bold text-primary mb-1 truncate" title="Audi A3">Audi A3</h3>
+                                <span class="inline-flex items-center gap-1 text-xs font-semibold text-gray-500 bg-gray-100 px-2 py-1 rounded">
+                                    <i class="ri-calendar-line"></i> 2025 Model                                </span>
+                            </div>
+                            <div class="flex items-center justify-between border-t border-b border-gray-100 py-3 mb-4">
+                                <div class="flex flex-col items-center flex-1 border-r border-gray-100">
+                                    <i class="ri-user-line text-primary text-lg mb-1"></i>
+                                    <span class="text-xs font-semibold text-gray-600">5 Kişi</span>
+                                </div>
+                                <div class="flex flex-col items-center flex-1 border-r border-gray-100">
+                                    <i class="ri-briefcase-line text-primary text-lg mb-1"></i>
+                                    <span class="text-xs font-semibold text-gray-600">3 Bavul</span>
+                                </div>
+                                <div class="flex flex-col items-center flex-1 border-r border-gray-100">
+                                    <i class="ri-gas-station-line text-primary text-lg mb-1"></i>
+                                    <span class="text-xs font-semibold text-gray-600">Dizel</span>
+                                </div>
+                                <div class="flex flex-col items-center flex-1">
+                                    <i class="ri-steering-2-line text-primary text-lg mb-1"></i>
+                                    <span class="text-xs font-semibold text-gray-600">Otomatik</span>
+                                </div>
+                            </div>
+                            <div class="mt-auto space-y-3">
+                                <div style="background-color: #eff6ff; border: 1px solid #dbeafe; padding: 0.6rem; border-radius: 0.5rem; display: flex; align-items: center; justify-content: space-between;">
+                                    <span style="font-size: 13px; font-weight: 700; color: #1e40af; text-transform: uppercase;">Aylık Kiralama</span>
+                                    <span style="font-size: 17px; font-weight: 800; color: #1e3a8a;">₺36.000</span>
+                                </div>
+                                <div class="grid grid-cols-2 gap-3">
+                                    <div class="flex flex-col items-center justify-center p-2 rounded-lg" style="background-color: #dc2626; color: white;">
+                                        <span style="font-size: 10px; font-weight: 700; color: rgba(255,255,255,0.8); text-transform: uppercase;">Günlük</span>
+                                        <span style="font-size: 1.125rem; font-weight: 900; color: #ffffff;">₺1.750</span>
+                                    </div>
+                                    <div class="flex flex-col items-center justify-center p-2 rounded-lg" style="background-color: #dc2626; color: white;">
+                                        <span style="font-size: 10px; font-weight: 700; color: rgba(255,255,255,0.8); text-transform: uppercase;">Depozito</span>
+                                        <span style="font-size: 1.125rem; font-weight: 900; color: #ffffff;">₺5.000</span>
+                                    </div>
+                                </div>
+                                <div class="grid grid-cols-2 gap-3 pt-2">
+                                    <a href="https://wa.me/905300405138?text=Merhaba+Audi+A3+Ara%C3%A7+Kiralamak+%C4%B0stiyorum." target="_blank" data-wa-text="Merhaba Audi A3 Araç Kiralamak İstiyorum." class="dynamic-whatsapp-link flex items-center justify-center py-2.5 rounded-lg bg-[#25D366] text-white hover:bg-[#128C7E] transition-colors font-bold text-sm shadow-sm">
+                                        <i class="ri-whatsapp-line text-lg mr-1"></i> WhatsApp
+                                    </a>
+                                    <a href="tel:+905300405138" class="dynamic-phone-link flex items-center justify-center py-2.5 rounded-lg bg-black text-white hover:bg-gray-800 transition-all font-bold text-sm shadow-sm">
+                                        <i class="ri-phone-line text-lg mr-1"></i> Bizi Arayın
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                                <div class="car-filter-item" data-fuel="Dizel" data-gear="Otomatik" data-price="2300">
+                    <div class="car-card bg-white rounded-xl shadow-premium overflow-hidden transition-all duration-300 border border-gray-100 hover:border-secondary flex flex-col group h-full">
+                        <a href="https://wa.me/905300405138?text=Merhaba+Mercedes+C200+Ara%C3%A7+Kiralamak+%C4%B0stiyorum." class="block relative overflow-hidden" target="_blank">
+                            <div class="relative h-56 overflow-hidden">
+                                <img src="resim/c200.png" alt="Mercedes C200" class="w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-110">
+                                <div class="absolute top-3 left-3 bg-secondary text-primary text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider shadow-lg z-10">
+                                    VIP Konforu                                </div>
+                                <div class="absolute top-3 right-3 bg-green-100 text-green-800 text-[10px] font-bold px-2 py-1 rounded shadow-md z-10 border border-green-200">
+                                    <span class="flex items-center gap-1"><i class="ri-shield-check-fill text-green-600"></i> TAM KASKO</span>
+                                </div>
+                                <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                            </div>
+                        </a>
+                        <div class="p-5 flex flex-col flex-grow">
+                            <div class="mb-3">
+                                <h3 class="text-xl font-bold text-primary mb-1 truncate" title="Mercedes C200">Mercedes C200</h3>
+                                <span class="inline-flex items-center gap-1 text-xs font-semibold text-gray-500 bg-gray-100 px-2 py-1 rounded">
+                                    <i class="ri-calendar-line"></i> 2025 Model                                </span>
+                            </div>
+                            <div class="flex items-center justify-between border-t border-b border-gray-100 py-3 mb-4">
+                                <div class="flex flex-col items-center flex-1 border-r border-gray-100">
+                                    <i class="ri-user-line text-primary text-lg mb-1"></i>
+                                    <span class="text-xs font-semibold text-gray-600">5 Kişi</span>
+                                </div>
+                                <div class="flex flex-col items-center flex-1 border-r border-gray-100">
+                                    <i class="ri-briefcase-line text-primary text-lg mb-1"></i>
+                                    <span class="text-xs font-semibold text-gray-600">3 Bavul</span>
+                                </div>
+                                <div class="flex flex-col items-center flex-1 border-r border-gray-100">
+                                    <i class="ri-gas-station-line text-primary text-lg mb-1"></i>
+                                    <span class="text-xs font-semibold text-gray-600">Dizel</span>
+                                </div>
+                                <div class="flex flex-col items-center flex-1">
+                                    <i class="ri-steering-2-line text-primary text-lg mb-1"></i>
+                                    <span class="text-xs font-semibold text-gray-600">Otomatik</span>
+                                </div>
+                            </div>
+                            <div class="mt-auto space-y-3">
+                                <div style="background-color: #eff6ff; border: 1px solid #dbeafe; padding: 0.6rem; border-radius: 0.5rem; display: flex; align-items: center; justify-content: space-between;">
+                                    <span style="font-size: 13px; font-weight: 700; color: #1e40af; text-transform: uppercase;">Aylık Kiralama</span>
+                                    <span style="font-size: 17px; font-weight: 800; color: #1e3a8a;">₺48.000</span>
+                                </div>
+                                <div class="grid grid-cols-2 gap-3">
+                                    <div class="flex flex-col items-center justify-center p-2 rounded-lg" style="background-color: #dc2626; color: white;">
+                                        <span style="font-size: 10px; font-weight: 700; color: rgba(255,255,255,0.8); text-transform: uppercase;">Günlük</span>
+                                        <span style="font-size: 1.125rem; font-weight: 900; color: #ffffff;">₺2.300</span>
+                                    </div>
+                                    <div class="flex flex-col items-center justify-center p-2 rounded-lg" style="background-color: #dc2626; color: white;">
+                                        <span style="font-size: 10px; font-weight: 700; color: rgba(255,255,255,0.8); text-transform: uppercase;">Depozito</span>
+                                        <span style="font-size: 1.125rem; font-weight: 900; color: #ffffff;">₺5.000</span>
+                                    </div>
+                                </div>
+                                <div class="grid grid-cols-2 gap-3 pt-2">
+                                    <a href="https://wa.me/905300405138?text=Merhaba+Mercedes+C200+Ara%C3%A7+Kiralamak+%C4%B0stiyorum." target="_blank" data-wa-text="Merhaba Mercedes C200 Araç Kiralamak İstiyorum." class="dynamic-whatsapp-link flex items-center justify-center py-2.5 rounded-lg bg-[#25D366] text-white hover:bg-[#128C7E] transition-colors font-bold text-sm shadow-sm">
+                                        <i class="ri-whatsapp-line text-lg mr-1"></i> WhatsApp
+                                    </a>
+                                    <a href="tel:+905300405138" class="dynamic-phone-link flex items-center justify-center py-2.5 rounded-lg bg-black text-white hover:bg-gray-800 transition-all font-bold text-sm shadow-sm">
+                                        <i class="ri-phone-line text-lg mr-1"></i> Bizi Arayın
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                                <div class="car-filter-item" data-fuel="Dizel" data-gear="Otomatik" data-price="2250">
+                    <div class="car-card bg-white rounded-xl shadow-premium overflow-hidden transition-all duration-300 border border-gray-100 hover:border-secondary flex flex-col group h-full">
+                        <a href="https://wa.me/905300405138?text=Merhaba+BMW+3+Serisi+Ara%C3%A7+Kiralamak+%C4%B0stiyorum." class="block relative overflow-hidden" target="_blank">
+                            <div class="relative h-56 overflow-hidden">
+                                <img src="resim/320.png" alt="BMW 3 Serisi" class="w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-110">
+                                <div class="absolute top-3 left-3 bg-secondary text-primary text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider shadow-lg z-10">
+                                    Prestij & Güç                                </div>
+                                <div class="absolute top-3 right-3 bg-green-100 text-green-800 text-[10px] font-bold px-2 py-1 rounded shadow-md z-10 border border-green-200">
+                                    <span class="flex items-center gap-1"><i class="ri-shield-check-fill text-green-600"></i> TAM KASKO</span>
+                                </div>
+                                <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                            </div>
+                        </a>
+                        <div class="p-5 flex flex-col flex-grow">
+                            <div class="mb-3">
+                                <h3 class="text-xl font-bold text-primary mb-1 truncate" title="BMW 3 Serisi">BMW 3 Serisi</h3>
+                                <span class="inline-flex items-center gap-1 text-xs font-semibold text-gray-500 bg-gray-100 px-2 py-1 rounded">
+                                    <i class="ri-calendar-line"></i> 2025 Model                                </span>
+                            </div>
+                            <div class="flex items-center justify-between border-t border-b border-gray-100 py-3 mb-4">
+                                <div class="flex flex-col items-center flex-1 border-r border-gray-100">
+                                    <i class="ri-user-line text-primary text-lg mb-1"></i>
+                                    <span class="text-xs font-semibold text-gray-600">5 Kişi</span>
+                                </div>
+                                <div class="flex flex-col items-center flex-1 border-r border-gray-100">
+                                    <i class="ri-briefcase-line text-primary text-lg mb-1"></i>
+                                    <span class="text-xs font-semibold text-gray-600">3 Bavul</span>
+                                </div>
+                                <div class="flex flex-col items-center flex-1 border-r border-gray-100">
+                                    <i class="ri-gas-station-line text-primary text-lg mb-1"></i>
+                                    <span class="text-xs font-semibold text-gray-600">Dizel</span>
+                                </div>
+                                <div class="flex flex-col items-center flex-1">
+                                    <i class="ri-steering-2-line text-primary text-lg mb-1"></i>
+                                    <span class="text-xs font-semibold text-gray-600">Otomatik</span>
+                                </div>
+                            </div>
+                            <div class="mt-auto space-y-3">
+                                <div style="background-color: #eff6ff; border: 1px solid #dbeafe; padding: 0.6rem; border-radius: 0.5rem; display: flex; align-items: center; justify-content: space-between;">
+                                    <span style="font-size: 13px; font-weight: 700; color: #1e40af; text-transform: uppercase;">Aylık Kiralama</span>
+                                    <span style="font-size: 17px; font-weight: 800; color: #1e3a8a;">₺48.000</span>
+                                </div>
+                                <div class="grid grid-cols-2 gap-3">
+                                    <div class="flex flex-col items-center justify-center p-2 rounded-lg" style="background-color: #dc2626; color: white;">
+                                        <span style="font-size: 10px; font-weight: 700; color: rgba(255,255,255,0.8); text-transform: uppercase;">Günlük</span>
+                                        <span style="font-size: 1.125rem; font-weight: 900; color: #ffffff;">₺2.250</span>
+                                    </div>
+                                    <div class="flex flex-col items-center justify-center p-2 rounded-lg" style="background-color: #dc2626; color: white;">
+                                        <span style="font-size: 10px; font-weight: 700; color: rgba(255,255,255,0.8); text-transform: uppercase;">Depozito</span>
+                                        <span style="font-size: 1.125rem; font-weight: 900; color: #ffffff;">₺5.000</span>
+                                    </div>
+                                </div>
+                                <div class="grid grid-cols-2 gap-3 pt-2">
+                                    <a href="https://wa.me/905300405138?text=Merhaba+BMW+3+Serisi+Ara%C3%A7+Kiralamak+%C4%B0stiyorum." target="_blank" data-wa-text="Merhaba BMW 3 Serisi Araç Kiralamak İstiyorum." class="dynamic-whatsapp-link flex items-center justify-center py-2.5 rounded-lg bg-[#25D366] text-white hover:bg-[#128C7E] transition-colors font-bold text-sm shadow-sm">
+                                        <i class="ri-whatsapp-line text-lg mr-1"></i> WhatsApp
+                                    </a>
+                                    <a href="tel:+905300405138" class="dynamic-phone-link flex items-center justify-center py-2.5 rounded-lg bg-black text-white hover:bg-gray-800 transition-all font-bold text-sm shadow-sm">
+                                        <i class="ri-phone-line text-lg mr-1"></i> Bizi Arayın
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                                <div class="car-filter-item" data-fuel="Dizel" data-gear="Otomatik" data-price="2550">
+                    <div class="car-card bg-white rounded-xl shadow-premium overflow-hidden transition-all duration-300 border border-gray-100 hover:border-secondary flex flex-col group h-full">
+                        <a href="https://wa.me/905300405138?text=Merhaba+BMW+5+Serisi+Ara%C3%A7+Kiralamak+%C4%B0stiyorum." class="block relative overflow-hidden" target="_blank">
+                            <div class="relative h-56 overflow-hidden">
+                                <img src="resim/520.png" alt="BMW 5 Serisi" class="w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-110">
+                                <div class="absolute top-3 left-3 bg-secondary text-primary text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider shadow-lg z-10">
+                                    Prestij & Güç                                </div>
+                                <div class="absolute top-3 right-3 bg-green-100 text-green-800 text-[10px] font-bold px-2 py-1 rounded shadow-md z-10 border border-green-200">
+                                    <span class="flex items-center gap-1"><i class="ri-shield-check-fill text-green-600"></i> TAM KASKO</span>
+                                </div>
+                                <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                            </div>
+                        </a>
+                        <div class="p-5 flex flex-col flex-grow">
+                            <div class="mb-3">
+                                <h3 class="text-xl font-bold text-primary mb-1 truncate" title="BMW 5 Serisi">BMW 5 Serisi</h3>
+                                <span class="inline-flex items-center gap-1 text-xs font-semibold text-gray-500 bg-gray-100 px-2 py-1 rounded">
+                                    <i class="ri-calendar-line"></i> 2025 Model                                </span>
+                            </div>
+                            <div class="flex items-center justify-between border-t border-b border-gray-100 py-3 mb-4">
+                                <div class="flex flex-col items-center flex-1 border-r border-gray-100">
+                                    <i class="ri-user-line text-primary text-lg mb-1"></i>
+                                    <span class="text-xs font-semibold text-gray-600">5 Kişi</span>
+                                </div>
+                                <div class="flex flex-col items-center flex-1 border-r border-gray-100">
+                                    <i class="ri-briefcase-line text-primary text-lg mb-1"></i>
+                                    <span class="text-xs font-semibold text-gray-600">4 Bavul</span>
+                                </div>
+                                <div class="flex flex-col items-center flex-1 border-r border-gray-100">
+                                    <i class="ri-gas-station-line text-primary text-lg mb-1"></i>
+                                    <span class="text-xs font-semibold text-gray-600">Dizel</span>
+                                </div>
+                                <div class="flex flex-col items-center flex-1">
+                                    <i class="ri-steering-2-line text-primary text-lg mb-1"></i>
+                                    <span class="text-xs font-semibold text-gray-600">Otomatik</span>
+                                </div>
+                            </div>
+                            <div class="mt-auto space-y-3">
+                                <div style="background-color: #eff6ff; border: 1px solid #dbeafe; padding: 0.6rem; border-radius: 0.5rem; display: flex; align-items: center; justify-content: space-between;">
+                                    <span style="font-size: 13px; font-weight: 700; color: #1e40af; text-transform: uppercase;">Aylık Kiralama</span>
+                                    <span style="font-size: 17px; font-weight: 800; color: #1e3a8a;">₺54.000</span>
+                                </div>
+                                <div class="grid grid-cols-2 gap-3">
+                                    <div class="flex flex-col items-center justify-center p-2 rounded-lg" style="background-color: #dc2626; color: white;">
+                                        <span style="font-size: 10px; font-weight: 700; color: rgba(255,255,255,0.8); text-transform: uppercase;">Günlük</span>
+                                        <span style="font-size: 1.125rem; font-weight: 900; color: #ffffff;">₺2.550</span>
+                                    </div>
+                                    <div class="flex flex-col items-center justify-center p-2 rounded-lg" style="background-color: #dc2626; color: white;">
+                                        <span style="font-size: 10px; font-weight: 700; color: rgba(255,255,255,0.8); text-transform: uppercase;">Depozito</span>
+                                        <span style="font-size: 1.125rem; font-weight: 900; color: #ffffff;">₺6.000</span>
+                                    </div>
+                                </div>
+                                <div class="grid grid-cols-2 gap-3 pt-2">
+                                    <a href="https://wa.me/905300405138?text=Merhaba+BMW+5+Serisi+Ara%C3%A7+Kiralamak+%C4%B0stiyorum." target="_blank" data-wa-text="Merhaba BMW 5 Serisi Araç Kiralamak İstiyorum." class="dynamic-whatsapp-link flex items-center justify-center py-2.5 rounded-lg bg-[#25D366] text-white hover:bg-[#128C7E] transition-colors font-bold text-sm shadow-sm">
+                                        <i class="ri-whatsapp-line text-lg mr-1"></i> WhatsApp
+                                    </a>
+                                    <a href="tel:+905300405138" class="dynamic-phone-link flex items-center justify-center py-2.5 rounded-lg bg-black text-white hover:bg-gray-800 transition-all font-bold text-sm shadow-sm">
+                                        <i class="ri-phone-line text-lg mr-1"></i> Bizi Arayın
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                                <div class="car-filter-item" data-fuel="Dizel" data-gear="Otomatik" data-price="2700">
+                    <div class="car-card bg-white rounded-xl shadow-premium overflow-hidden transition-all duration-300 border border-gray-100 hover:border-secondary flex flex-col group h-full">
+                        <a href="https://wa.me/905300405138?text=Merhaba+Mercedes+E200+Ara%C3%A7+Kiralamak+%C4%B0stiyorum." class="block relative overflow-hidden" target="_blank">
+                            <div class="relative h-56 overflow-hidden">
+                                <img src="resim/e200.png" alt="Mercedes E200" class="w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-110">
+                                <div class="absolute top-3 left-3 bg-secondary text-primary text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider shadow-lg z-10">
+                                    VIP Konforu                                </div>
+                                <div class="absolute top-3 right-3 bg-green-100 text-green-800 text-[10px] font-bold px-2 py-1 rounded shadow-md z-10 border border-green-200">
+                                    <span class="flex items-center gap-1"><i class="ri-shield-check-fill text-green-600"></i> TAM KASKO</span>
+                                </div>
+                                <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                            </div>
+                        </a>
+                        <div class="p-5 flex flex-col flex-grow">
+                            <div class="mb-3">
+                                <h3 class="text-xl font-bold text-primary mb-1 truncate" title="Mercedes E200">Mercedes E200</h3>
+                                <span class="inline-flex items-center gap-1 text-xs font-semibold text-gray-500 bg-gray-100 px-2 py-1 rounded">
+                                    <i class="ri-calendar-line"></i> 2025 Model                                </span>
+                            </div>
+                            <div class="flex items-center justify-between border-t border-b border-gray-100 py-3 mb-4">
+                                <div class="flex flex-col items-center flex-1 border-r border-gray-100">
+                                    <i class="ri-user-line text-primary text-lg mb-1"></i>
+                                    <span class="text-xs font-semibold text-gray-600">5 Kişi</span>
+                                </div>
+                                <div class="flex flex-col items-center flex-1 border-r border-gray-100">
+                                    <i class="ri-briefcase-line text-primary text-lg mb-1"></i>
+                                    <span class="text-xs font-semibold text-gray-600">4 Bavul</span>
+                                </div>
+                                <div class="flex flex-col items-center flex-1 border-r border-gray-100">
+                                    <i class="ri-gas-station-line text-primary text-lg mb-1"></i>
+                                    <span class="text-xs font-semibold text-gray-600">Dizel</span>
+                                </div>
+                                <div class="flex flex-col items-center flex-1">
+                                    <i class="ri-steering-2-line text-primary text-lg mb-1"></i>
+                                    <span class="text-xs font-semibold text-gray-600">Otomatik</span>
+                                </div>
+                            </div>
+                            <div class="mt-auto space-y-3">
+                                <div style="background-color: #eff6ff; border: 1px solid #dbeafe; padding: 0.6rem; border-radius: 0.5rem; display: flex; align-items: center; justify-content: space-between;">
+                                    <span style="font-size: 13px; font-weight: 700; color: #1e40af; text-transform: uppercase;">Aylık Kiralama</span>
+                                    <span style="font-size: 17px; font-weight: 800; color: #1e3a8a;">₺54.000</span>
+                                </div>
+                                <div class="grid grid-cols-2 gap-3">
+                                    <div class="flex flex-col items-center justify-center p-2 rounded-lg" style="background-color: #dc2626; color: white;">
+                                        <span style="font-size: 10px; font-weight: 700; color: rgba(255,255,255,0.8); text-transform: uppercase;">Günlük</span>
+                                        <span style="font-size: 1.125rem; font-weight: 900; color: #ffffff;">₺2.700</span>
+                                    </div>
+                                    <div class="flex flex-col items-center justify-center p-2 rounded-lg" style="background-color: #dc2626; color: white;">
+                                        <span style="font-size: 10px; font-weight: 700; color: rgba(255,255,255,0.8); text-transform: uppercase;">Depozito</span>
+                                        <span style="font-size: 1.125rem; font-weight: 900; color: #ffffff;">₺6.000</span>
+                                    </div>
+                                </div>
+                                <div class="grid grid-cols-2 gap-3 pt-2">
+                                    <a href="https://wa.me/905300405138?text=Merhaba+Mercedes+E200+Ara%C3%A7+Kiralamak+%C4%B0stiyorum." target="_blank" data-wa-text="Merhaba Mercedes E200 Araç Kiralamak İstiyorum." class="dynamic-whatsapp-link flex items-center justify-center py-2.5 rounded-lg bg-[#25D366] text-white hover:bg-[#128C7E] transition-colors font-bold text-sm shadow-sm">
+                                        <i class="ri-whatsapp-line text-lg mr-1"></i> WhatsApp
+                                    </a>
+                                    <a href="tel:+905300405138" class="dynamic-phone-link flex items-center justify-center py-2.5 rounded-lg bg-black text-white hover:bg-gray-800 transition-all font-bold text-sm shadow-sm">
+                                        <i class="ri-phone-line text-lg mr-1"></i> Bizi Arayın
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                                <div class="car-filter-item" data-fuel="Dizel" data-gear="Otomatik" data-price="3500">
+                    <div class="car-card bg-white rounded-xl shadow-premium overflow-hidden transition-all duration-300 border border-gray-100 hover:border-secondary flex flex-col group h-full">
+                        <a href="https://wa.me/905300405138?text=Merhaba+Range+Rover+Ara%C3%A7+Kiralamak+%C4%B0stiyorum." class="block relative overflow-hidden" target="_blank">
+                            <div class="relative h-56 overflow-hidden">
+                                <img src="resim/range.png" alt="Range Rover" class="w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-110">
+                                <div class="absolute top-3 left-3 bg-secondary text-primary text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider shadow-lg z-10">
+                                    Özel Fırsat                                </div>
+                                <div class="absolute top-3 right-3 bg-green-100 text-green-800 text-[10px] font-bold px-2 py-1 rounded shadow-md z-10 border border-green-200">
+                                    <span class="flex items-center gap-1"><i class="ri-shield-check-fill text-green-600"></i> TAM KASKO</span>
+                                </div>
+                                <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                            </div>
+                        </a>
+                        <div class="p-5 flex flex-col flex-grow">
+                            <div class="mb-3">
+                                <h3 class="text-xl font-bold text-primary mb-1 truncate" title="Range Rover">Range Rover</h3>
+                                <span class="inline-flex items-center gap-1 text-xs font-semibold text-gray-500 bg-gray-100 px-2 py-1 rounded">
+                                    <i class="ri-calendar-line"></i> 2025 Model                                </span>
+                            </div>
+                            <div class="flex items-center justify-between border-t border-b border-gray-100 py-3 mb-4">
+                                <div class="flex flex-col items-center flex-1 border-r border-gray-100">
+                                    <i class="ri-user-line text-primary text-lg mb-1"></i>
+                                    <span class="text-xs font-semibold text-gray-600">5 Kişi</span>
+                                </div>
+                                <div class="flex flex-col items-center flex-1 border-r border-gray-100">
+                                    <i class="ri-briefcase-line text-primary text-lg mb-1"></i>
+                                    <span class="text-xs font-semibold text-gray-600">5 Bavul</span>
+                                </div>
+                                <div class="flex flex-col items-center flex-1 border-r border-gray-100">
+                                    <i class="ri-gas-station-line text-primary text-lg mb-1"></i>
+                                    <span class="text-xs font-semibold text-gray-600">Dizel</span>
+                                </div>
+                                <div class="flex flex-col items-center flex-1">
+                                    <i class="ri-steering-2-line text-primary text-lg mb-1"></i>
+                                    <span class="text-xs font-semibold text-gray-600">Otomatik</span>
+                                </div>
+                            </div>
+                            <div class="mt-auto space-y-3">
+                                <div style="background-color: #eff6ff; border: 1px solid #dbeafe; padding: 0.6rem; border-radius: 0.5rem; display: flex; align-items: center; justify-content: space-between;">
+                                    <span style="font-size: 13px; font-weight: 700; color: #1e40af; text-transform: uppercase;">Aylık Kiralama</span>
+                                    <span style="font-size: 17px; font-weight: 800; color: #1e3a8a;">₺75.000</span>
+                                </div>
+                                <div class="grid grid-cols-2 gap-3">
+                                    <div class="flex flex-col items-center justify-center p-2 rounded-lg" style="background-color: #dc2626; color: white;">
+                                        <span style="font-size: 10px; font-weight: 700; color: rgba(255,255,255,0.8); text-transform: uppercase;">Günlük</span>
+                                        <span style="font-size: 1.125rem; font-weight: 900; color: #ffffff;">₺3.500</span>
+                                    </div>
+                                    <div class="flex flex-col items-center justify-center p-2 rounded-lg" style="background-color: #dc2626; color: white;">
+                                        <span style="font-size: 10px; font-weight: 700; color: rgba(255,255,255,0.8); text-transform: uppercase;">Depozito</span>
+                                        <span style="font-size: 1.125rem; font-weight: 900; color: #ffffff;">₺6.000</span>
+                                    </div>
+                                </div>
+                                <div class="grid grid-cols-2 gap-3 pt-2">
+                                    <a href="https://wa.me/905300405138?text=Merhaba+Range+Rover+Ara%C3%A7+Kiralamak+%C4%B0stiyorum." target="_blank" data-wa-text="Merhaba Range Rover Araç Kiralamak İstiyorum." class="dynamic-whatsapp-link flex items-center justify-center py-2.5 rounded-lg bg-[#25D366] text-white hover:bg-[#128C7E] transition-colors font-bold text-sm shadow-sm">
+                                        <i class="ri-whatsapp-line text-lg mr-1"></i> WhatsApp
+                                    </a>
+                                    <a href="tel:+905300405138" class="dynamic-phone-link flex items-center justify-center py-2.5 rounded-lg bg-black text-white hover:bg-gray-800 transition-all font-bold text-sm shadow-sm">
+                                        <i class="ri-phone-line text-lg mr-1"></i> Bizi Arayın
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                                <div class="car-filter-item" data-fuel="Dizel" data-gear="Otomatik" data-price="4000">
+                    <div class="car-card bg-white rounded-xl shadow-premium overflow-hidden transition-all duration-300 border border-gray-100 hover:border-secondary flex flex-col group h-full">
+                        <a href="https://wa.me/905300405138?text=Merhaba+Mercedes+G63+Ara%C3%A7+Kiralamak+%C4%B0stiyorum." class="block relative overflow-hidden" target="_blank">
+                            <div class="relative h-56 overflow-hidden">
+                                <img src="resim/g63.png" alt="Mercedes G63" class="w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-110">
+                                <div class="absolute top-3 left-3 bg-secondary text-primary text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider shadow-lg z-10">
+                                    VIP Konforu                                </div>
+                                <div class="absolute top-3 right-3 bg-green-100 text-green-800 text-[10px] font-bold px-2 py-1 rounded shadow-md z-10 border border-green-200">
+                                    <span class="flex items-center gap-1"><i class="ri-shield-check-fill text-green-600"></i> TAM KASKO</span>
+                                </div>
+                                <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                            </div>
+                        </a>
+                        <div class="p-5 flex flex-col flex-grow">
+                            <div class="mb-3">
+                                <h3 class="text-xl font-bold text-primary mb-1 truncate" title="Mercedes G63">Mercedes G63</h3>
+                                <span class="inline-flex items-center gap-1 text-xs font-semibold text-gray-500 bg-gray-100 px-2 py-1 rounded">
+                                    <i class="ri-calendar-line"></i> 2025 Model                                </span>
+                            </div>
+                            <div class="flex items-center justify-between border-t border-b border-gray-100 py-3 mb-4">
+                                <div class="flex flex-col items-center flex-1 border-r border-gray-100">
+                                    <i class="ri-user-line text-primary text-lg mb-1"></i>
+                                    <span class="text-xs font-semibold text-gray-600">5 Kişi</span>
+                                </div>
+                                <div class="flex flex-col items-center flex-1 border-r border-gray-100">
+                                    <i class="ri-briefcase-line text-primary text-lg mb-1"></i>
+                                    <span class="text-xs font-semibold text-gray-600">4 Bavul</span>
+                                </div>
+                                <div class="flex flex-col items-center flex-1 border-r border-gray-100">
+                                    <i class="ri-gas-station-line text-primary text-lg mb-1"></i>
+                                    <span class="text-xs font-semibold text-gray-600">Dizel</span>
+                                </div>
+                                <div class="flex flex-col items-center flex-1">
+                                    <i class="ri-steering-2-line text-primary text-lg mb-1"></i>
+                                    <span class="text-xs font-semibold text-gray-600">Otomatik</span>
+                                </div>
+                            </div>
+                            <div class="mt-auto space-y-3">
+                                <div style="background-color: #eff6ff; border: 1px solid #dbeafe; padding: 0.6rem; border-radius: 0.5rem; display: flex; align-items: center; justify-content: space-between;">
+                                    <span style="font-size: 13px; font-weight: 700; color: #1e40af; text-transform: uppercase;">Aylık Kiralama</span>
+                                    <span style="font-size: 17px; font-weight: 800; color: #1e3a8a;">₺90.000</span>
+                                </div>
+                                <div class="grid grid-cols-2 gap-3">
+                                    <div class="flex flex-col items-center justify-center p-2 rounded-lg" style="background-color: #dc2626; color: white;">
+                                        <span style="font-size: 10px; font-weight: 700; color: rgba(255,255,255,0.8); text-transform: uppercase;">Günlük</span>
+                                        <span style="font-size: 1.125rem; font-weight: 900; color: #ffffff;">₺4.000</span>
+                                    </div>
+                                    <div class="flex flex-col items-center justify-center p-2 rounded-lg" style="background-color: #dc2626; color: white;">
+                                        <span style="font-size: 10px; font-weight: 700; color: rgba(255,255,255,0.8); text-transform: uppercase;">Depozito</span>
+                                        <span style="font-size: 1.125rem; font-weight: 900; color: #ffffff;">₺6.000</span>
+                                    </div>
+                                </div>
+                                <div class="grid grid-cols-2 gap-3 pt-2">
+                                    <a href="https://wa.me/905300405138?text=Merhaba+Mercedes+G63+Ara%C3%A7+Kiralamak+%C4%B0stiyorum." target="_blank" data-wa-text="Merhaba Mercedes G63 Araç Kiralamak İstiyorum." class="dynamic-whatsapp-link flex items-center justify-center py-2.5 rounded-lg bg-[#25D366] text-white hover:bg-[#128C7E] transition-colors font-bold text-sm shadow-sm">
+                                        <i class="ri-whatsapp-line text-lg mr-1"></i> WhatsApp
+                                    </a>
+                                    <a href="tel:+905300405138" class="dynamic-phone-link flex items-center justify-center py-2.5 rounded-lg bg-black text-white hover:bg-gray-800 transition-all font-bold text-sm shadow-sm">
+                                        <i class="ri-phone-line text-lg mr-1"></i> Bizi Arayın
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                                <div class="car-filter-item" data-fuel="Dizel" data-gear="Otomatik" data-price="2600">
+                    <div class="car-card bg-white rounded-xl shadow-premium overflow-hidden transition-all duration-300 border border-gray-100 hover:border-secondary flex flex-col group h-full">
+                        <a href="https://wa.me/905300405138?text=Merhaba+Volkswagen+Caravelle+Ara%C3%A7+Kiralamak+%C4%B0stiyorum." class="block relative overflow-hidden" target="_blank">
+                            <div class="relative h-56 overflow-hidden">
+                                <img src="resim/transporter.png" alt="Volkswagen Caravelle" class="w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-110">
+                                <div class="absolute top-3 left-3 bg-secondary text-primary text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider shadow-lg z-10">
+                                    Özel Fırsat                                </div>
+                                <div class="absolute top-3 right-3 bg-green-100 text-green-800 text-[10px] font-bold px-2 py-1 rounded shadow-md z-10 border border-green-200">
+                                    <span class="flex items-center gap-1"><i class="ri-shield-check-fill text-green-600"></i> TAM KASKO</span>
+                                </div>
+                                <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                            </div>
+                        </a>
+                        <div class="p-5 flex flex-col flex-grow">
+                            <div class="mb-3">
+                                <h3 class="text-xl font-bold text-primary mb-1 truncate" title="Volkswagen Caravelle">Volkswagen Caravelle</h3>
+                                <span class="inline-flex items-center gap-1 text-xs font-semibold text-gray-500 bg-gray-100 px-2 py-1 rounded">
+                                    <i class="ri-calendar-line"></i> 2025 Model                                </span>
+                            </div>
+                            <div class="flex items-center justify-between border-t border-b border-gray-100 py-3 mb-4">
+                                <div class="flex flex-col items-center flex-1 border-r border-gray-100">
+                                    <i class="ri-user-line text-primary text-lg mb-1"></i>
+                                    <span class="text-xs font-semibold text-gray-600">9 Kişi</span>
+                                </div>
+                                <div class="flex flex-col items-center flex-1 border-r border-gray-100">
+                                    <i class="ri-briefcase-line text-primary text-lg mb-1"></i>
+                                    <span class="text-xs font-semibold text-gray-600">6 Bavul</span>
+                                </div>
+                                <div class="flex flex-col items-center flex-1 border-r border-gray-100">
+                                    <i class="ri-gas-station-line text-primary text-lg mb-1"></i>
+                                    <span class="text-xs font-semibold text-gray-600">Dizel</span>
+                                </div>
+                                <div class="flex flex-col items-center flex-1">
+                                    <i class="ri-steering-2-line text-primary text-lg mb-1"></i>
+                                    <span class="text-xs font-semibold text-gray-600">Otomatik</span>
+                                </div>
+                            </div>
+                            <div class="mt-auto space-y-3">
+                                <div style="background-color: #eff6ff; border: 1px solid #dbeafe; padding: 0.6rem; border-radius: 0.5rem; display: flex; align-items: center; justify-content: space-between;">
+                                    <span style="font-size: 13px; font-weight: 700; color: #1e40af; text-transform: uppercase;">Aylık Kiralama</span>
+                                    <span style="font-size: 17px; font-weight: 800; color: #1e3a8a;">₺54.000</span>
+                                </div>
+                                <div class="grid grid-cols-2 gap-3">
+                                    <div class="flex flex-col items-center justify-center p-2 rounded-lg" style="background-color: #dc2626; color: white;">
+                                        <span style="font-size: 10px; font-weight: 700; color: rgba(255,255,255,0.8); text-transform: uppercase;">Günlük</span>
+                                        <span style="font-size: 1.125rem; font-weight: 900; color: #ffffff;">₺2.600</span>
+                                    </div>
+                                    <div class="flex flex-col items-center justify-center p-2 rounded-lg" style="background-color: #dc2626; color: white;">
+                                        <span style="font-size: 10px; font-weight: 700; color: rgba(255,255,255,0.8); text-transform: uppercase;">Depozito</span>
+                                        <span style="font-size: 1.125rem; font-weight: 900; color: #ffffff;">₺6.000</span>
+                                    </div>
+                                </div>
+                                <div class="grid grid-cols-2 gap-3 pt-2">
+                                    <a href="https://wa.me/905300405138?text=Merhaba+Volkswagen+Caravelle+Ara%C3%A7+Kiralamak+%C4%B0stiyorum." target="_blank" data-wa-text="Merhaba Volkswagen Caravelle Araç Kiralamak İstiyorum." class="dynamic-whatsapp-link flex items-center justify-center py-2.5 rounded-lg bg-[#25D366] text-white hover:bg-[#128C7E] transition-colors font-bold text-sm shadow-sm">
+                                        <i class="ri-whatsapp-line text-lg mr-1"></i> WhatsApp
+                                    </a>
+                                    <a href="tel:+905300405138" class="dynamic-phone-link flex items-center justify-center py-2.5 rounded-lg bg-black text-white hover:bg-gray-800 transition-all font-bold text-sm shadow-sm">
+                                        <i class="ri-phone-line text-lg mr-1"></i> Bizi Arayın
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                                <div class="car-filter-item" data-fuel="Dizel" data-gear="Otomatik" data-price="3200">
+                    <div class="car-card bg-white rounded-xl shadow-premium overflow-hidden transition-all duration-300 border border-gray-100 hover:border-secondary flex flex-col group h-full">
+                        <a href="https://wa.me/905300405138?text=Merhaba+Mercedes+Vito+Ara%C3%A7+Kiralamak+%C4%B0stiyorum." class="block relative overflow-hidden" target="_blank">
+                            <div class="relative h-56 overflow-hidden">
+                                <img src="resim/vito.png" alt="Mercedes Vito" class="w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-110">
+                                <div class="absolute top-3 left-3 bg-secondary text-primary text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider shadow-lg z-10">
+                                    VIP Konforu                                </div>
+                                <div class="absolute top-3 right-3 bg-green-100 text-green-800 text-[10px] font-bold px-2 py-1 rounded shadow-md z-10 border border-green-200">
+                                    <span class="flex items-center gap-1"><i class="ri-shield-check-fill text-green-600"></i> TAM KASKO</span>
+                                </div>
+                                <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                            </div>
+                        </a>
+                        <div class="p-5 flex flex-col flex-grow">
+                            <div class="mb-3">
+                                <h3 class="text-xl font-bold text-primary mb-1 truncate" title="Mercedes Vito">Mercedes Vito</h3>
+                                <span class="inline-flex items-center gap-1 text-xs font-semibold text-gray-500 bg-gray-100 px-2 py-1 rounded">
+                                    <i class="ri-calendar-line"></i> 2025 Model                                </span>
+                            </div>
+                            <div class="flex items-center justify-between border-t border-b border-gray-100 py-3 mb-4">
+                                <div class="flex flex-col items-center flex-1 border-r border-gray-100">
+                                    <i class="ri-user-line text-primary text-lg mb-1"></i>
+                                    <span class="text-xs font-semibold text-gray-600">9 Kişi</span>
+                                </div>
+                                <div class="flex flex-col items-center flex-1 border-r border-gray-100">
+                                    <i class="ri-briefcase-line text-primary text-lg mb-1"></i>
+                                    <span class="text-xs font-semibold text-gray-600">5 Bavul</span>
+                                </div>
+                                <div class="flex flex-col items-center flex-1 border-r border-gray-100">
+                                    <i class="ri-gas-station-line text-primary text-lg mb-1"></i>
+                                    <span class="text-xs font-semibold text-gray-600">Dizel</span>
+                                </div>
+                                <div class="flex flex-col items-center flex-1">
+                                    <i class="ri-steering-2-line text-primary text-lg mb-1"></i>
+                                    <span class="text-xs font-semibold text-gray-600">Otomatik</span>
+                                </div>
+                            </div>
+                            <div class="mt-auto space-y-3">
+                                <div style="background-color: #eff6ff; border: 1px solid #dbeafe; padding: 0.6rem; border-radius: 0.5rem; display: flex; align-items: center; justify-content: space-between;">
+                                    <span style="font-size: 13px; font-weight: 700; color: #1e40af; text-transform: uppercase;">Aylık Kiralama</span>
+                                    <span style="font-size: 17px; font-weight: 800; color: #1e3a8a;">₺85.000</span>
+                                </div>
+                                <div class="grid grid-cols-2 gap-3">
+                                    <div class="flex flex-col items-center justify-center p-2 rounded-lg" style="background-color: #dc2626; color: white;">
+                                        <span style="font-size: 10px; font-weight: 700; color: rgba(255,255,255,0.8); text-transform: uppercase;">Günlük</span>
+                                        <span style="font-size: 1.125rem; font-weight: 900; color: #ffffff;">₺3.200</span>
+                                    </div>
+                                    <div class="flex flex-col items-center justify-center p-2 rounded-lg" style="background-color: #dc2626; color: white;">
+                                        <span style="font-size: 10px; font-weight: 700; color: rgba(255,255,255,0.8); text-transform: uppercase;">Depozito</span>
+                                        <span style="font-size: 1.125rem; font-weight: 900; color: #ffffff;">₺5.000</span>
+                                    </div>
+                                </div>
+                                <div class="grid grid-cols-2 gap-3 pt-2">
+                                    <a href="https://wa.me/905300405138?text=Merhaba+Mercedes+Vito+Ara%C3%A7+Kiralamak+%C4%B0stiyorum." target="_blank" data-wa-text="Merhaba Mercedes Vito Araç Kiralamak İstiyorum." class="dynamic-whatsapp-link flex items-center justify-center py-2.5 rounded-lg bg-[#25D366] text-white hover:bg-[#128C7E] transition-colors font-bold text-sm shadow-sm">
+                                        <i class="ri-whatsapp-line text-lg mr-1"></i> WhatsApp
+                                    </a>
+                                    <a href="tel:+905300405138" class="dynamic-phone-link flex items-center justify-center py-2.5 rounded-lg bg-black text-white hover:bg-gray-800 transition-all font-bold text-sm shadow-sm">
+                                        <i class="ri-phone-line text-lg mr-1"></i> Bizi Arayın
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                            </div>
+
+            <div id="no-results" class="hidden text-center py-16">
+                <i class="ri-search-line text-6xl text-gray-300 mb-4"></i>
+                <h3 class="text-2xl font-bold text-gray-700 mb-2">Araç Bulunamadı</h3>
+                <p class="text-gray-500 mb-6">Filtreleri değiştirerek tekrar deneyebilirsiniz.</p>
+                <button onclick="document.getElementById('reset-filters').click()" class="px-6 py-3 bg-primary text-white rounded-lg hover:bg-secondary transition-colors">
+                    Filtreleri Sıfırla
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Filter JavaScript -->
+    <script>
+        const carCards = document.querySelectorAll('.car-filter-item');
+        const filterFuel = document.getElementById('filter-fuel');
+        const filterGear = document.getElementById('filter-gear');
+        const filterPrice = document.getElementById('filter-price');
+        const resetButton = document.getElementById('reset-filters');
+        const carCount = document.getElementById('car-count');
+        const noResults = document.getElementById('no-results');
+        const carGrid = document.getElementById('car-grid');
+
+        function applyFilters() {
+            const fuelValue = filterFuel.value;
+            const gearValue = filterGear.value;
+            const priceValue = filterPrice.value;
+
+            let visibleCards = [];
+
+            carCards.forEach(card => {
+                const cardFuel = card.dataset.fuel;
+                const cardGear = card.dataset.gear;
+                const cardPrice = parseFloat(card.dataset.price);
+
+                let show = true;
+
+                if (fuelValue && cardFuel !== fuelValue) show = false;
+                if (gearValue && cardGear !== gearValue) show = false;
+
+                if (show) {
+                    card.style.display = '';
+                    visibleCards.push({ element: card, price: cardPrice });
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+
+            if (priceValue && visibleCards.length > 0) {
+                visibleCards.sort((a, b) => {
+                    return priceValue === 'asc' ? a.price - b.price : b.price - a.price;
+                });
+
+                visibleCards.forEach(item => {
+                    carGrid.appendChild(item.element);
+                });
+            }
+
+            carCount.textContent = visibleCards.length;
+            if (visibleCards.length === 0) {
+                noResults.classList.remove('hidden');
+                carGrid.classList.add('hidden');
+            } else {
+                noResults.classList.add('hidden');
+                carGrid.classList.remove('hidden');
+            }
+        }
+
+        filterFuel.addEventListener('change', applyFilters);
+        filterGear.addEventListener('change', applyFilters);
+        filterPrice.addEventListener('change', applyFilters);
+
+        resetButton.addEventListener('click', () => {
+            filterFuel.value = '';
+            filterGear.value = '';
+            filterPrice.value = '';
+            applyFilters();
+        });
+
+        applyFilters();
+    </script>
+
+    <!-- Footer -->
+    <footer class="bg-secondary text-white pt-16 pb-8 mt-auto relative overflow-hidden">
+         <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-primary via-blue-400 to-primary"></div>
+            <div class="container mx-auto px-4 relative z-10">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-10 mb-12">
+                <div>
+                    <a href="index.html" class="flex items-center gap-3 mb-6">
+                        <span class="text-2xl font-black text-white tracking-tighter">
+                            ARAS <span class="text-primary">OTO FİLO</span>
+                        </span>
+
+                        <img src="resim/images.png"
+                             alt="Avis Logo"
+                             class="h-9 w-auto object-contain">
+                    </a>
+                    <p class="text-gray-400 mb-6 text-sm leading-relaxed">
+                        Kurumsal Kiralamanın Adresi
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 flex items-center justify-center bg-white/5 rounded-full hover:bg-primary hover:text-white transition-all">
+                            <i class="ri-facebook-fill"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 flex items-center justify-center bg-white/5 rounded-full hover:bg-primary hover:text-white transition-all">
+                            <i class="ri-twitter-x-fill"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 flex items-center justify-center bg-white/5 rounded-full hover:bg-primary hover:text-white transition-all">
+                            <i class="ri-instagram-fill"></i>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-6 text-white">Hızlı Erişim</h3>
+                    <ul class="space-y-3 text-sm">
+                        <li><a href="index.html" class="text-gray-400 hover:text-primary transition-colors">Anasayfa</a></li>
+                        <li><a href="araclar.html" class="text-gray-400 hover:text-primary transition-colors">Araçlarımız</a></li>
+                        <li><a href="hakkimizda.html" class="text-gray-400 hover:text-primary transition-colors">Hakkımızda</a></li>
+                        <li><a href="iletisim.html" class="text-gray-400 hover:text-primary transition-colors">İletişim</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-6 text-white">Yardım</h3>
+                    <ul class="space-y-3 text-sm">
+                        <li><a href="sss.html" class="text-gray-400 hover:text-primary transition-colors">Sıkça Sorulan Sorular</a></li>
+                        <li><a href="kosullar.html" class="text-gray-400 hover:text-primary transition-colors">Kiralama Koşulları</a></li>
+                        <li><a href="gizlilik.html" class="text-gray-400 hover:text-primary transition-colors">Gizlilik Politikası</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-6 text-white">İletişim</h3>
+                    <ul class="space-y-4 text-sm">
+                        <li class="flex items-start gap-3">
+                            <i class="ri-map-pin-line text-primary text-lg mt-0.5"></i>
+                            <span class="text-gray-400">İstanbul</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="ri-phone-line text-primary text-lg"></i>
+                            <a href="tel:+905300405138" class="dynamic-phone-link text-gray-400 hover:text-white transition-colors">0530 040 51 38</a>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="ri-mail-line text-primary text-lg"></i>
+                            <a href="mailto:info@arasotofilo.com" class="text-gray-400 hover:text-white transition-colors">
+                                info@arasotofilo.com
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-white/10 pt-8 text-center">
+                <p class="text-gray-500 text-xs">
+                    © 2026 ARAS OTO FİLO. Tüm hakları saklıdır.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Sticky Buttons -->
+    <a href="https://wa.me/905300405138?text=Merhaba+Kiral%C4%B1k+Ara%C3%A7lar+Hakk%C4%B1nda+Bilgi+Almak+%C4%B0stiyorum" target="_blank" class="dynamic-whatsapp-link sticky-btn bg-[#25D366] text-white hover:bg-[#20b858] right-6">
+        <i class="fab fa-whatsapp text-2xl"></i>
+        <span class="hidden md:inline">Destek Hattı</span>
+    </a>
+    <a href="tel:+905300405138" class="dynamic-phone-link sticky-btn bg-primary text-white hover:bg-primaryDark left-6 md:left-6">
+        <i class="ri-phone-fill text-xl"></i>
+        <span class="hidden md:inline">Bizi Arayın</span>
+    </a>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const mobileMenuButton = document.getElementById("mobile-menu-button");
+        const mobileMenu = document.getElementById("mobile-menu");
+
+        mobileMenuButton.addEventListener("click", () => {
+            mobileMenu.classList.toggle("hidden");
+        });
+
+        document.addEventListener("click", (event) => {
+            if (!mobileMenuButton.contains(event.target) && !mobileMenu.contains(event.target)) {
+                mobileMenu.classList.add("hidden");
+            }
+        });
+      });
+    </script>
+
+</body>
+
+</html>

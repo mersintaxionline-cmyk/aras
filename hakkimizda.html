@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hakkımızda - ARAS OTO FİLO</title>
+
+    <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+    <link rel="stylesheet" href="../../cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link href="../../cdn.jsdelivr.net/npm/remixicon%404.2.0/fonts/remixicon.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#d6001c",
+                        primaryDark: "#a30015",
+                        secondary: "#0f172a"
+                    },
+                    fontFamily: {
+                        sans: ["Outfit", "sans-serif"]
+                    }
+                }
+            }
+        };
+    </script>
+
+    <style>
+        body {
+            font-family: "Outfit", sans-serif;
+            background: #ffffff;
+            color: #334155;
+        }
+
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.96);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(226, 232, 240, 0.9);
+            box-shadow: 0 8px 32px rgba(15, 23, 42, 0.05);
+        }
+
+        .glass-card {
+            background: #ffffff;
+            border: 1px solid #e5e7eb;
+            box-shadow: 0 10px 30px rgba(15, 23, 42, 0.05);
+            transition: all 0.25s ease;
+        }
+
+        .glass-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 16px 40px rgba(15, 23, 42, 0.08);
+            border-color: #d1d5db;
+        }
+
+        .hero-about {
+            background:
+                linear-gradient(120deg, rgba(15, 23, 42, 0.88), rgba(214, 0, 28, 0.35)),
+                url("https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?q=80&w=2070&auto=format&fit=crop");
+            background-position: center;
+            background-size: cover;
+            min-height: 400px;
+        }
+
+        .sticky-btn {
+            position: fixed;
+            bottom: 25px;
+            z-index: 50;
+            padding: 12px 24px;
+            border-radius: 50px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-weight: 700;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+            transition: transform 0.3s ease;
+        }
+
+        .sticky-btn:hover {
+            transform: translateY(-3px);
+        }
+
+        @media (max-width: 768px) {
+            .sticky-btn {
+                padding: 12px 14px;
+            }
+        }
+    </style>
+</head>
+
+<body class="flex flex-col min-h-screen">
+
+    <header class="sticky top-0 z-50 glass-panel w-full">
+        <div class="bg-primary text-white py-1.5 text-center text-xs font-semibold tracking-wide">
+            Türkiye'nin En Modern Araç Kiralama Deneyimi
+        </div>
+
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-4">
+
+                <a href="index.html" class="flex items-center gap-3 leading-none group">
+                    <span class="text-2xl font-black text-secondary tracking-tighter group-hover:text-primary transition-colors whitespace-nowrap">
+                        ARAS <span class="text-primary">OTO FİLO</span>
+                    </span>
+
+                    <img src="resim/images.png"
+                         alt="Avis Logo"
+                         class="h-10 w-auto object-contain">
+                </a>
+
+                <nav class="hidden md:flex space-x-8 items-center">
+                    <a href="index.html" class="text-secondary font-semibold text-sm uppercase tracking-wide hover:text-primary transition-all">Anasayfa</a>
+                    <a href="araclar.html" class="text-secondary font-semibold text-sm uppercase tracking-wide hover:text-primary transition-all">Araçlarımız</a>
+                    <a href="hakkimizda.html" class="text-primary font-bold text-sm uppercase tracking-wide border-b-2 border-primary">Hakkımızda</a>
+                    <a href="iletisim.html" class="text-secondary font-semibold text-sm uppercase tracking-wide hover:text-primary transition-all">İletişim</a>
+
+                    <a href="tel:+905300405138"
+                       class="bg-gradient-to-r from-primary to-primaryDark text-white py-2.5 px-6 rounded-full font-semibold shadow-lg transition-all flex items-center gap-2 hover:-translate-y-0.5">
+                        <i class="ri-phone-fill"></i>
+                        Hemen Ara
+                    </a>
+                </nav>
+
+                <button id="mobile-menu-button" class="md:hidden text-secondary p-2 rounded-lg hover:bg-gray-100 transition-colors">
+                    <i class="ri-menu-4-line text-2xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <nav id="mobile-menu" class="md:hidden hidden bg-white border-t border-gray-200 absolute w-full shadow-xl">
+            <div class="flex flex-col p-4 space-y-2">
+                <a href="index.html" class="p-3 rounded-xl hover:bg-gray-50 text-secondary font-medium">Anasayfa</a>
+                <a href="araclar.html" class="p-3 rounded-xl hover:bg-gray-50 text-secondary font-medium">Araçlarımız</a>
+                <a href="hakkimizda.html" class="p-3 rounded-xl bg-primary text-white font-bold">Hakkımızda</a>
+                <a href="iletisim.html" class="p-3 rounded-xl hover:bg-gray-50 text-secondary font-medium">İletişim</a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero-about flex items-center justify-center text-center px-4">
+        <div class="max-w-4xl">
+            <h1 class="text-5xl md:text-6xl font-black text-white mb-4 drop-shadow-lg">
+                Hakkımızda
+            </h1>
+            <p class="text-lg md:text-xl text-gray-100 max-w-2xl mx-auto">
+                Güvenilir, şeffaf ve kurumsal araç kiralama hizmeti
+            </p>
+        </div>
+    </section>
+
+    <main class="flex-grow bg-white py-20">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-20">
+                <div>
+                    <h2 class="text-4xl font-extrabold text-secondary mb-6">
+                        ARAS OTO FİLO'ya Hoş Geldiniz
+                    </h2>
+
+                    <p class="text-gray-600 leading-relaxed mb-4">
+                        ARAS OTO FİLO olarak araç kiralama sürecini güvenilir, hızlı ve şeffaf bir deneyime dönüştürmeyi hedefliyoruz. Müşteri memnuniyetini ön planda tutan hizmet anlayışımızla, bireysel ve kurumsal ihtiyaçlara uygun araç çözümleri sunuyoruz.
+                    </p>
+
+                    <p class="text-gray-600 leading-relaxed mb-4">
+                        Ekonomik segmentten geniş aile araçlarına, şehir içi kullanımdan uzun dönem kiralamaya kadar farklı ihtiyaçlara cevap veren araç seçenekleriyle hizmet veriyoruz. Temiz, bakımlı ve konforlu araçlarla yolculuğunuzu daha güvenli hale getiriyoruz.
+                    </p>
+
+                    <p class="text-gray-600 leading-relaxed">
+                        Şeffaf fiyatlandırma, kolay iletişim ve hızlı rezervasyon yaklaşımıyla müşterilerimize kurumsal standartlarda araç kiralama deneyimi sunuyoruz.
+                    </p>
+                </div>
+
+                <div class="glass-card rounded-2xl overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?q=80&w=1983&auto=format&fit=crop"
+                         alt="ARAS OTO FİLO"
+                         class="w-full h-96 object-cover">
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-20">
+                <div class="glass-card rounded-2xl p-8 text-center">
+                    <div class="w-20 h-20 bg-primary/10 text-primary rounded-full flex items-center justify-center text-4xl mx-auto mb-6">
+                        <i class="ri-car-line"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-secondary mb-4">Geniş Filo</h3>
+                    <p class="text-gray-600">Farklı ihtiyaçlara uygun ekonomik, konforlu ve prestijli araç seçenekleri.</p>
+                </div>
+
+                <div class="glass-card rounded-2xl p-8 text-center">
+                    <div class="w-20 h-20 bg-primary/10 text-primary rounded-full flex items-center justify-center text-4xl mx-auto mb-6">
+                        <i class="ri-user-smile-line"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-secondary mb-4">Memnun Müşteri</h3>
+                    <p class="text-gray-600">Hızlı iletişim, net bilgi ve güvenilir kiralama süreci.</p>
+                </div>
+
+                <div class="glass-card rounded-2xl p-8 text-center">
+                    <div class="w-20 h-20 bg-primary/10 text-primary rounded-full flex items-center justify-center text-4xl mx-auto mb-6">
+                        <i class="ri-shield-check-line"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-secondary mb-4">Güvenli Hizmet</h3>
+                    <p class="text-gray-600">Bakımlı araçlar, şeffaf koşullar ve kurumsal hizmet anlayışı.</p>
+                </div>
+            </div>
+
+            <div class="glass-card rounded-2xl p-8 md:p-12">
+                <h2 class="text-3xl font-extrabold text-secondary text-center mb-12">
+                    Neden Bizi Tercih Etmelisiniz?
+                </h2>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+                    <div class="flex gap-4">
+                        <div class="flex-shrink-0">
+                            <div class="w-12 h-12 bg-primary/10 text-primary rounded-lg flex items-center justify-center">
+                                <i class="ri-shield-check-line text-2xl"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-secondary mb-2">Güvenilir Hizmet</h3>
+                            <p class="text-gray-600">Net kiralama koşulları ve güven veren hizmet süreciyle yanınızdayız.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex gap-4">
+                        <div class="flex-shrink-0">
+                            <div class="w-12 h-12 bg-primary/10 text-primary rounded-lg flex items-center justify-center">
+                                <i class="ri-price-tag-3-line text-2xl"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-secondary mb-2">Şeffaf Fiyatlandırma</h3>
+                            <p class="text-gray-600">Araç sınıfına ve kiralama süresine göre net fiyat bilgisi sunuyoruz.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex gap-4">
+                        <div class="flex-shrink-0">
+                            <div class="w-12 h-12 bg-primary/10 text-primary rounded-lg flex items-center justify-center">
+                                <i class="ri-time-line text-2xl"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-secondary mb-2">Hızlı İletişim</h3>
+                            <p class="text-gray-600">Telefon ve WhatsApp üzerinden hızlı şekilde teklif ve bilgi alabilirsiniz.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex gap-4">
+                        <div class="flex-shrink-0">
+                            <div class="w-12 h-12 bg-primary/10 text-primary rounded-lg flex items-center justify-center">
+                                <i class="ri-star-smile-line text-2xl"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-secondary mb-2">Temiz ve Bakımlı Araçlar</h3>
+                            <p class="text-gray-600">Araçlarımız düzenli bakımdan geçirilir ve teslimata hazır şekilde sunulur.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="bg-secondary text-white pt-16 pb-8 mt-auto relative overflow-hidden">
+        <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-primary via-red-400 to-primary"></div>
+
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-10 mb-12">
+
+                <div>
+                    <a href="index.html" class="flex items-center gap-3 mb-6">
+                        <span class="text-2xl font-black text-white tracking-tighter">
+                            ARAS <span class="text-primary">OTO FİLO</span>
+                        </span>
+
+                        <img src="resim/images.png"
+                             alt="Avis Logo"
+                             class="h-9 w-auto object-contain">
+                    </a>
+
+                    <p class="text-gray-400 mb-6 text-sm leading-relaxed">
+                        Kurumsal Kiralamanın Adresi
+                    </p>
+
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 flex items-center justify-center bg-white/5 rounded-full hover:bg-primary hover:text-white transition-all">
+                            <i class="ri-facebook-fill"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 flex items-center justify-center bg-white/5 rounded-full hover:bg-primary hover:text-white transition-all">
+                            <i class="ri-twitter-x-fill"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 flex items-center justify-center bg-white/5 rounded-full hover:bg-primary hover:text-white transition-all">
+                            <i class="ri-instagram-fill"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="text-lg font-bold mb-6 text-white">Hızlı Erişim</h3>
+                    <ul class="space-y-3 text-sm">
+                        <li><a href="index.html" class="text-gray-400 hover:text-primary transition-colors">Anasayfa</a></li>
+                        <li><a href="araclar.html" class="text-gray-400 hover:text-primary transition-colors">Araçlarımız</a></li>
+                        <li><a href="hakkimizda.html" class="text-gray-400 hover:text-primary transition-colors">Hakkımızda</a></li>
+                        <li><a href="iletisim.html" class="text-gray-400 hover:text-primary transition-colors">İletişim</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="text-lg font-bold mb-6 text-white">Yardım</h3>
+                    <ul class="space-y-3 text-sm">
+                        <li><a href="sss.html" class="text-gray-400 hover:text-primary transition-colors">Sıkça Sorulan Sorular</a></li>
+                        <li><a href="kosullar.html" class="text-gray-400 hover:text-primary transition-colors">Kiralama Koşulları</a></li>
+                        <li><a href="gizlilik.html" class="text-gray-400 hover:text-primary transition-colors">Gizlilik Politikası</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="text-lg font-bold mb-6 text-white">İletişim</h3>
+                    <ul class="space-y-4 text-sm">
+                        <li class="flex items-start gap-3">
+                            <i class="ri-map-pin-line text-primary text-lg mt-0.5"></i>
+                            <span class="text-gray-400">İstanbul</span>
+                        </li>
+
+                        <li class="flex items-center gap-3">
+                            <i class="ri-phone-line text-primary text-lg"></i>
+                            <a href="tel:+905300405138" class="text-gray-400 hover:text-white transition-colors">
+                                0530 040 51 38
+                            </a>
+                        </li>
+
+                        <li class="flex items-center gap-3">
+                            <i class="ri-mail-line text-primary text-lg"></i>
+                            <a href="mailto:info@arasotofilo.com" class="text-gray-400 hover:text-white transition-colors">
+                                info@arasotofilo.com
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="border-t border-white/10 pt-8 text-center">
+                <p class="text-gray-500 text-xs">
+                    © 2026 ARAS OTO FİLO. Tüm hakları saklıdır.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/905300405138?text=Merhaba%20Kiral%C4%B1k%20Ara%C3%A7lar%20Hakk%C4%B1nda%20Bilgi%20Almak%20%C4%B0stiyorum"
+       target="_blank"
+       class="sticky-btn bg-[#25D366] text-white hover:bg-[#20b858] right-6">
+        <i class="fab fa-whatsapp text-2xl"></i>
+        <span class="hidden md:inline">Destek Hattı</span>
+    </a>
+
+    <a href="tel:+905300405138"
+       class="sticky-btn bg-primary text-white hover:bg-primaryDark left-6">
+        <i class="ri-phone-fill text-xl"></i>
+        <span class="hidden md:inline">Bizi Arayın</span>
+    </a>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const mobileMenuButton = document.getElementById("mobile-menu-button");
+            const mobileMenu = document.getElementById("mobile-menu");
+
+            if (mobileMenuButton && mobileMenu) {
+                mobileMenuButton.addEventListener("click", function () {
+                    mobileMenu.classList.toggle("hidden");
+                });
+
+                document.addEventListener("click", function (event) {
+                    if (!mobileMenuButton.contains(event.target) && !mobileMenu.contains(event.target)) {
+                        mobileMenu.classList.add("hidden");
+                    }
+                });
+            }
+        });
+    </script>
+
+</body>
+</html>
